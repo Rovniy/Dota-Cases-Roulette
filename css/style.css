@@ -39,7 +39,7 @@ body {background:#000;}
 	box-shadow: 5px 0px 10px #000000, -5px 0px 10px #000000;
 	transition:0.5s;
 }
-.menunav ul li:hover +li {border-left:0px;transition:0.5s;}
+.menunav ul li:hover +li {border-left:2px solid black;transition:0.5s;}
 .menunav ul li a {
 	padding:15px 30px 14px 30px; 
 	margin:0px;
@@ -72,7 +72,7 @@ body {background:#000;}
 	box-shadow: 5px 0px 10px #000000, -5px 0px 10px #000000;
 	transition:0.5s;
 }
-.menunav ul .active + li {border-left:0px;}
+.menunav ul .active + li {border-left:2px solid black;}
  
 .menunav ul .active a {
 	color:#fff;
@@ -107,3 +107,6 @@ body {background:#000;}
 .steam_enter {color:#ba5c2c;}
 .steam_enter i {padding:10px 0 0 0;}
 .steam_enter:hover {color:#d2a89d;}
+
+/*********************************** CONTENT ******************************/
+.bdy {padding-top:100px;}
