@@ -4,6 +4,7 @@ require 'header.php';
 ?>
 <!--  Тело сайта - главная страница  -->
 page body
+Вот тут что-т о добавил
 <?php
 //Подключение футера
 require 'footer.php';
