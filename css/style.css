@@ -7,41 +7,91 @@
 /************************ SAIT ****************************/
 body {background:#F9F9F9;}
 .header_bar {
-	background:#3e3e3e;
-	height:50px;
+	background:url("../img/header_bg.png") no-repeat center;
 }
 
 .header .logo {height:50px; display:block}
 
 .menunav ul {
 	font-size:0;
+	margin-bottom:0px;
 }
 .menunav ul li {
-	display:inline;
+	display:inline-block;
+	-webkit-transform: skewX(-15deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(-15deg); /* Для Firefox */
+    -o-transform: skewX(-15deg); /* Для Opera */
+    -ms-transform: skewX(-15deg); /* Для IE */
+    transform: skewX(-15deg); /* CSS3 */
+	border-left:#3e3e3e solid 2px;
+	border-right:#000 solid 2px;
 }
-.menunav ul li:hover {}
+.menunav ul li:hover {
+	color:#fff;
+	-moz-box-shadow: 5px 0px 10px #000000, -5px 0px 10px #000000;
+	-webkit-box-shadow: 5px 0px 10px #000000,-5px 0px 10px #000000;
+	box-shadow: 5px 0px 10px #000000, -5px 0px 10px #000000;
+}
+.menunav ul li:hover +li {border-left:0px;}
 .menunav ul li a {
-	padding:14px 15px 12px 15px; 
+	padding:14px 30px 15px 30px; 
 	margin:0px;
 	font-size:15px;
 	display:inline-block;
-	color:#fff;
-	border-bottom:3px solid #3e3e3e;
+	color:#757d86;
+	transition:0.5s;
+	-webkit-transform: skewX(15deg); /* Для Safari и Chrome */
+    -moz-transform: skewX(15deg); /* Для Firefox */
+    -o-transform: skewX(15deg); /* Для Opera */
+    -ms-transform: skewX(15deg); /* Для IE */
+    transform: skewX(15deg); /* CSS3 */
+	text-shadow:2px 3px 2px #000000;
+
 }
 .menunav ul li a:hover {
 	text-decoration:none;
-	color:#00FFCC;
-	border-bottom:3px solid #00FFCC;
-	-webkit-box-shadow: 0px 23px 30px -16px rgba(0, 255, 204, 0.5);
-	-moz-box-shadow:    0px 23px 30px -16px rgba(0, 255, 204, 0.5);
-	box-shadow:         0px 23px 30px -16px rgba(0, 255, 204, 0.5);
+	color:#fff;
+	text-shadow: 0 0 50px #00ffff, 
+				0 -10px 50px #00ffff,
+				0px 10px 50px #00ffff, 
+				20px 0px 50px #00ffff, 
+				-20px 0px 50px #00ffff;
+	transition:0s;
+	
 }
+.menunav ul .active {
+	-moz-box-shadow: 5px 0px 10px #000000, -5px 0px 10px #000000;
+	-webkit-box-shadow: 5px 0px 10px #000000,-5px 0px 10px #000000;
+	box-shadow: 5px 0px 10px #000000, -5px 0px 10px #000000;
+	transition:0.5s;
+}
+.menunav ul .active + li {border-left:0px;}
+ 
+.menunav ul .active a {
+	color:#fff;
+	text-decoration:none;	
+	text-shadow: 0 0 50px #00ffff, 
+				0 -10px 50px #00ffff,
+				0px 10px 50px #00ffff, 
+				20px 0px 50px #00ffff, 
+				-20px 0px 50px #00ffff;
+}
+
 .menunav ul li a:link {text-decoration:none;}
 .menunav ul li a:active {text-decoration:none;
-	color:#00FFCC;
-	border-bottom:3px solid #00FFCC;
-	-webkit-box-shadow: 0px 23px 30px -16px rgba(0, 255, 204, 0.5);
-	-moz-box-shadow:    0px 23px 30px -16px rgba(0, 255, 204, 0.5);
-	box-shadow:         0px 23px 30px -16px rgba(0, 255, 204, 0.5);}
+	color:#fff;
+}
+.footer_bar {
+	border-top:3px solid #00FFCC;
+	background:#3e3e3e;
+	color:#fff;
+	font-size:12px;
+}
+.footer {padding-top: 5px; }
+.steam_enter {margin-top:12px;transition:0.5s;}
+.steam_enter:hover {-webkit-box-shadow: 0px 0px 18px -2px rgba(125,178,55,1);
+-moz-box-shadow: 0px 0px 18px -2px rgba(125,178,55,1);
+box-shadow: 0px 0px 18px -2px rgba(125,178,55,1);transition:0.5s;}
+
 
 
