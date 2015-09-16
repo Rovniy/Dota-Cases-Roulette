@@ -3,12 +3,12 @@ session_start();
 
 //----------------------------------- ПОДКЛЮЧЕНИЕ К БД ----------------------------------
 //Формирование подключения
-$check_link = mysql_connect('localhost', 'USER', 'PASS');
+$check_link = mysql_connect('localhost', 'root', '');
 //Проверка подключения
 if (!$check_link) {
     die('Ошибка соединения: ' . mysql_error());
 }
-mysql_select_db("BD NAME") or die("Не могу выбрать таблицу в БД");
+mysql_select_db("dota2_bd") or die("Не могу выбрать таблицу в БД");
 mysql_query("SET NAMES utf8");
 
 //----------------------------------- КОНСТАНТЫ -----------------------------------------
