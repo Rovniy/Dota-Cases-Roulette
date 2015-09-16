@@ -7,6 +7,7 @@
 <title>Dota2.gg</title>
 <link type="image/x-icon" rel="shortcut icon" href="favicon.png">
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -21,13 +22,13 @@ include '/sys/api.php';
 <div class="container-fluid header_bar">
 	
 		<div class="row header">
-			<div class="col-lg-1 logo center">
-				<i class="fa fa-user"></i>
+			<div class="col-lg-1 user_acc center">
+				<a href="#"><i class="fa fa-user fa-2x"></i></a>
 			</div>
 			<div class="col-lg-1 logo center">
 				<img src="img/logo.png" alt=""/>
 			</div>
-			<div class="col-lg-8 menunav col-sm-12">
+			<div class="col-lg-9 menunav col-sm-12">
 				<ul>
 					<li class="active"><a href="#" >ГЛАВНАЯ</a></li>
 					<li><a href="#">ПОМОЩЬ</a></li>
@@ -37,8 +38,8 @@ include '/sys/api.php';
 					<li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
 				</ul>
 			</div>
-			<div class="col-lg-2 logo center">
-				<a href="#" class="pull-right steam_enter"><img src="img/steam_login.png"/></a>
+			<div class="col-lg-1 steam pull-right">
+				<a href="#" class=" steam_enter"><i class="fa fa-steam fa-2x"></i></a>
 			</div>
 		</div>
 	
