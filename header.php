@@ -17,20 +17,27 @@
 include '/sys/api.php'; 
 ?>
 <!-- Шапка сайта, главное меню и логотип -->
-<div class="row-fluid header">
-	<div class="row">
-		<div class="col-lg-4 logo">
-			<img src="#" alt=""/>
-		</div>
-		<div class="col-lg-8 menunav">
-			<ul>
-				<li>Menu point</li>
-				<li>Menu point</li>
-				<li>Menu point</li>
-				<li>Menu point</li>
-				<li>Menu point</li>
-			</ul>
+<div class="container-fluid header_bar">
+	<a href="#" class="pull-right steam_enter">Steam</a>
+	<div class="container header">
+		<div class="row">
+			<div class="col-lg-2 logo">
+				<img src="img/logo.png" alt=""/>
+			</div>
+			<div class="col-lg-10 menunav">
+				<ul>
+					<li><a href="#" class="active">Главная</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Инструкция</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">ТОП игроков</a></li>
+					<li><a href="#">Личный кабинет</a></li>
+					<li><a href="#">Мы Вконтакте</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
+	
+	
 </div>
 <!-- Тело сайта  -->

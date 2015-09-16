@@ -4,12 +4,44 @@
 .ins_red {color:red}
 .ins_green {color:green}
 
+/************************ SAIT ****************************/
+body {background:#F9F9F9;}
+.header_bar {
+	background:#3e3e3e;
+	height:50px;
+}
 
+.header .logo {height:50px; display:block}
 
-
-.header {background:#3e3e3e;}
-
-.logo {background:#3e3e3e;}
-.menunav ul li {display:inline;}
+.menunav ul {
+	font-size:0;
+}
+.menunav ul li {
+	display:inline;
+}
+.menunav ul li:hover {}
+.menunav ul li a {
+	padding:14px 15px 12px 15px; 
+	margin:0px;
+	font-size:15px;
+	display:inline-block;
+	color:#fff;
+	border-bottom:3px solid #3e3e3e;
+}
+.menunav ul li a:hover {
+	text-decoration:none;
+	color:#00FFCC;
+	border-bottom:3px solid #00FFCC;
+	-webkit-box-shadow: 0px 23px 30px -16px rgba(0, 255, 204, 0.5);
+	-moz-box-shadow:    0px 23px 30px -16px rgba(0, 255, 204, 0.5);
+	box-shadow:         0px 23px 30px -16px rgba(0, 255, 204, 0.5);
+}
+.menunav ul li a:link {text-decoration:none;}
+.menunav ul li a:active {text-decoration:none;
+	color:#00FFCC;
+	border-bottom:3px solid #00FFCC;
+	-webkit-box-shadow: 0px 23px 30px -16px rgba(0, 255, 204, 0.5);
+	-moz-box-shadow:    0px 23px 30px -16px rgba(0, 255, 204, 0.5);
+	box-shadow:         0px 23px 30px -16px rgba(0, 255, 204, 0.5);}
 
 
