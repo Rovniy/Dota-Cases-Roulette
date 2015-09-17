@@ -17,6 +17,7 @@
 <?php 
 //Подключение библиотеки API сайта
 include '/sys/api.php'; 
+require "/steam_auth.php"  
 ?>
 <!-- Шапка сайта, главное меню и логотип -->
 <div class="container-fluid header_bar">
@@ -43,10 +44,10 @@ include '/sys/api.php';
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">
-				<a href="" class="steam_enter" id="steam_enter">
-						<!--<i class="fa fa-steam fa-2x"></i> -->
-						<?php include "/steam_auth.php" ?>  
-						<!-- fff -->
+				<a href="?login" class="steam_enter" id="steam_enter">
+						<i class="fa fa-steam fa-2x"></i>
+					
+						
 				</a>			
 			</div>
 		</div>
