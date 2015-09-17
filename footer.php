@@ -12,7 +12,12 @@
 		</div>
 </div>
 <!--  Конец body  -->
-<audio id="MusicDota" src="sounds/main_theme.mp3" autoplay="autoplay"></audio>
-
+<audio id="MusicDota" src="sounds/main_theme.mp3" repeat="repeat" autoplay="autoplay"></audio>
+<div id="trailer" class="is_overlay">
+	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+		<source src="movies/Dots2_background.mp4"></source>
+		<source src="movies/Dots2_background.webm" type="video/webm"></source>
+	</video>
+</div>
 </body>
 </html>

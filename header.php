@@ -34,7 +34,7 @@ include '/sys/api.php';
 			</div>
 			<div class="col-lg-8 menunav col-sm-12">
 				<ul>
-					<li class="active"><a href="#" >ГЛАВНАЯ</a></li>
+					<li><a href="#" >ГЛАВНАЯ</a></li>
 					<li><a href="#">ПОМОЩЬ</a></li>
 					<li><a href="#">ИНСТРУКЦИЯ</a></li>
 					<li><a href="#">ГАРАНТИИ</a></li>

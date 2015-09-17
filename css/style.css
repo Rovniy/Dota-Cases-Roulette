@@ -9,6 +9,7 @@ body {
 	background:#000;
 	cursor: url(../img/defualt.cur), default;
 }
+a, a:hover {cursor: url(../img/defualt.cur), default;}
 @font-face{
 	font-family:'Dota2';
 	src:url('../fonts/dotafont.ttf') format('truetype');
@@ -21,6 +22,9 @@ body {
 	top:0px;
 	left:0px;
 	right:0px;
+-webkit-box-shadow: 0px 8px 17px 1px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    0px 8px 17px 1px rgba(0, 0, 0, 0.75);
+box-shadow:         0px 8px 17px 1px rgba(0, 0, 0, 0.75);
 }
 .header .logo {height:50px; display:block;background:url(../img/shadow_logo.png) no-repeat;}
 
@@ -126,6 +130,7 @@ body {
 
 /*********************************** CONTENT ******************************/
 .bdy {padding-top:100px;}
+.main {z-index:10;}
 
 
 
@@ -134,3 +139,37 @@ body {
 /************************************   CHAT *********************************/
 .chatinput {width:400px; height:25px; background:#000; border:1px solid #292e2f; padding-left:10px; color:#525252;}
 .white {color:#fff;}
+
+
+
+
+/*************************************    VIDEO BACKGROUND   **********************/
+.is_overlay{display: block; width: 100%; height: 100%; z-index:-10;}
+#trailer {
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	overflow: hidden;
+}
+#trailer > video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110%;
+	height: 110%;
+	z-index:0
+}
+@media (min-aspect-ratio: 16/9) {
+     #trailer > video { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+     #trailer > video { width: 300%; left: -100%; }
+}
+/* Если есть поддержка object-fit, используем его: */
+@supports (object-fit: cover) {
+     #trailer > video {
+         top: 0; 
+		 left: 0;
+         width: 110%; height: 110%;
+         object-fit: cover;
+     }
+ }
