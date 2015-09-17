@@ -45,7 +45,8 @@ include '/sys/api.php';
 			<div class="col-lg-1 steam pull-right">
 				<a href="" class="steam_enter" id="steam_enter">
 						<!--<i class="fa fa-steam fa-2x"></i> -->
-						<?php include "/steam_auth.php" ?>
+						<?php include "/steam_auth.php" ?>  
+						<!-- fff -->
 				</a>			
 			</div>
 		</div>
