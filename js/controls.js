@@ -42,6 +42,37 @@ $(document).ready(function ($) {
 		});
 //Выдвигающаяся кнопка логин в стим
 		$('#steam_enter').hover(function(){
-			$('#class="hidden_btn_steam"').slideDown('slow');
+			//$('#hidden_btn_steam').css('display','block');
 		});
+		
+		
+		$('#volume').click(function(){ 
+			var pausa = document.getElementById('MusicDota');
+			if (pausa.paused == true) {
+				document.getElementById('MusicDota').play();
+				$('#volume').html("<i class='fa fa-volume-up fa-2x'>");
+			} 
+			else {
+				document.getElementById('MusicDota').pause();
+				$('#volume').html("<i class='fa fa-volume-down fa-2x volumedown'>");
+			}
+		});
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
 });	

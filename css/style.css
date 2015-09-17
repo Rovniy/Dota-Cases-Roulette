@@ -5,7 +5,10 @@
 .ins_green {color:green}
 
 /************************ SAIT ****************************/
-body {background:#000;}
+body {
+	background:#000;
+	cursor: url(../img/defualt.cur), default;
+}
 @font-face{
 	font-family:'Dota2';
 	src:url('../fonts/dotafont.ttf') format('truetype');
@@ -13,8 +16,13 @@ body {background:#000;}
 /************************ HEADER *****************************/
 .header_bar {
 	background:url("../img/header_bg.png") no-repeat center;
+	z-index:99999;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
 }
-.header .logo {height:50px; display:block}
+.header .logo {height:50px; display:block;background:url(../img/shadow_logo.png) no-repeat;}
 
 .menunav ul {
 	font-size:0;
@@ -91,22 +99,38 @@ body {background:#000;}
 }
 /********************************* FOOTER *********************************/
 .footer_bar {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	right:0px;
 	color:#fff;
 	font-size:12px;
+	padding-bottom:15px;
+	z-index:99999;
 }
 .footer {padding-top: 5px; }
+.controls-buttons {text-align:right;}
+.controls-buttons .volume{color:#707c80;}
+.controls-buttons .volume:hover{color:#fff;}
+.volumedown {padding-right:7px;}
 
 /********************************** USER ACCOUN HEADER ICON ***************/
-.user_acc a i {color:#757d86;padding:10px 0 0 100px;transition:0.5s;}
+.user_acc a {color:#757d86;padding:9px 10px 0 10px;transition:0.5s;height:50px;}
 .user_acc a:hover i {color:#fff;transition:0.5s;}
 
 /********************************** STEAM LOGIN ICON **********************/
-.steam {background:#250a0c; width:55px; height:50px;}
-.steam_enter {color:#ba5c2c;}
+.steam {background:#250a0c; height:50px; padding:0px; width:50px;}
+.steam_enter {color:#ba5c2c;height:50px;padding:22px 11px 11px 11px;transition:0.5s;}
 .steam_enter i {padding:10px 0 0 0;}
-.steam_enter:hover {color:#d2a89d;}
-.hidden_btn_steam {display:none;height:50px;}
-.steam_enter:hover > .hidden_btn_steam {display:block;}
+.steam_enter:hover {color:#d2a89d;transition:0.5s;}
 
 /*********************************** CONTENT ******************************/
 .bdy {padding-top:100px;}
+
+
+
+
+
+/************************************   CHAT *********************************/
+.chatinput {width:400px; height:25px; background:#000; border:1px solid #292e2f; padding-left:10px; color:#525252;}
+.white {color:#fff;}

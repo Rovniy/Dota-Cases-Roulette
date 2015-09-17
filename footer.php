@@ -1,17 +1,18 @@
 <!--  Нижний колонтитул  -->
 <div class="container-fluid footer_bar">
 	<div class="row footer">
-			<div class="col-lg-4 col-sm-12">
-				<p>Dota777.com</p>
+			<div class="col-lg-4 col-sm-4">
+				<input type="text" class="chatinput" placeholder="(Для сайта) Общаться можно здесь">
 			</div>
-			<div class="col-lg-4 col-sm-12 center">
-				<p>Все права защищены. Любое копирование материала возможно только с письменного согласия владельцев сайта</p>
+			<div class="col-lg-4 col-sm-4 center">
 			</div>
-			<div class="col-lg-4 col-sm-12 pull-right">
-				<p class="pull-right">xPloit development</p>
+			<div class="col-lg-4 col-sm-4 pull-right controls-buttons">
+				<a href="#" id="volume" class="volume"><i class="fa fa-volume-up fa-2x"></i></a>
 			</div>
 		</div>
 </div>
 <!--  Конец body  -->
+<audio id="MusicDota" src="sounds/main_theme.mp3" autoplay="autoplay"></audio>
+
 </body>
 </html>

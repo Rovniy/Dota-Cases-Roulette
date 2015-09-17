@@ -23,12 +23,16 @@ include '/sys/api.php';
 	
 		<div class="row header">
 			<div class="col-lg-1 user_acc center">
-				<a href="#"><i class="fa fa-user fa-2x"></i></a>
+				<a href="#" class="pull-right">
+					<i class="fa fa-user fa-2x"></i>
+				</a>
 			</div>
 			<div class="col-lg-1 logo center">
-				<img src="img/logo.gif" alt=""/>
+				<a href="#">
+					<img src="img/logo.gif" alt="Dota777"/>
+				</a>
 			</div>
-			<div class="col-lg-9 menunav col-sm-12">
+			<div class="col-lg-8 menunav col-sm-12">
 				<ul>
 					<li class="active"><a href="#" >ГЛАВНАЯ</a></li>
 					<li><a href="#">ПОМОЩЬ</a></li>
@@ -38,9 +42,10 @@ include '/sys/api.php';
 					<li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
 				</ul>
 			</div>
-			<div class="col-lg-1 steam ">
-				<a href="#" class="steam_enter" id="steam_enter"><i class="fa fa-steam fa-2x"></i></a>
-				<a href="#" class="hidden_btn_steam" id="hidden_btn_steam"><img src="img/steam_login_big.png"/></a>
+			<div class="col-lg-1 steam pull-right">
+				<a href="#" class="steam_enter" id="steam_enter">
+						<i class="fa fa-steam fa-2x"></i>
+				</a>			
 			</div>
 		</div>
 	
