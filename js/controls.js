@@ -40,4 +40,8 @@ $(document).ready(function ($) {
 			}
 		return false;
 		});
+//Выдвигающаяся кнопка логин в стим
+		$('#steam_enter').hover(function(){
+			$('#class="hidden_btn_steam"').slideDown('slow');
+		});
 });	

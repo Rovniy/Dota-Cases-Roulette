@@ -9,11 +9,11 @@ body {background:#000;}
 @font-face{
 	font-family:'Dota2';
 	src:url('../fonts/dotafont.ttf') format('truetype');
-	}
+}
+/************************ HEADER *****************************/
 .header_bar {
 	background:url("../img/header_bg.png") no-repeat center;
 }
-
 .header .logo {height:50px; display:block}
 
 .menunav ul {
@@ -105,6 +105,8 @@ body {background:#000;}
 .steam_enter {color:#ba5c2c;}
 .steam_enter i {padding:10px 0 0 0;}
 .steam_enter:hover {color:#d2a89d;}
+.hidden_btn_steam {display:none;height:50px;}
+.steam_enter:hover > .hidden_btn_steam {display:block;}
 
 /*********************************** CONTENT ******************************/
 .bdy {padding-top:100px;}
