@@ -17,13 +17,14 @@ require "../sys/api.php";
 
 function install() {
 	mysql_query("
-	CREATE TABLE blog (
-	  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-	  tema VARCHAR(255),
-	  text TEXT,  
-	  date TIMESTAMP,
-	  INDEX (tema)
-	) DEFAULT CHARSET=cp1251;" 
+	CREATE TABLE account (
+	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	 steamid text,
+	 money VARCHAR(50),
+	 bonus int,
+	 linkid text,
+	 bonusnick text
+	) DEFAULT CHARSET=utf8;" 
 	);
 
 	/* Проверка состояния БД */
