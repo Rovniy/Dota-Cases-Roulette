@@ -27,14 +27,19 @@ require 'header.php';
 					<h3>458 руб.<br/><small>Ваш баланс</small></h3>
 				</div>
 				<div class="col-lg-4 AccountByu">
-					<a href="#" class="ByuTicket">ПОПОЛНИТЬ БАЛАНС</a>
+					<a href="#" class="RedButton">ВЫЙТИ</a>
 				</div>
 			</div>
-			<div class="TradeLink">
-				<form action="">
-					<input type="text" class="TradeLinkArea" placeholder="Персональная ссылка на обмен" value="https://steamcommunity.com/tradeoffer/new/?partner=60679470&token=Rbp6kdzZ">
-					<button type="submit">Сохранить</button>
-				</form>
+			<div class="row TradeLink">
+				<div class="col-lg-9 Left">
+					<form action="">
+						<input type="text" class="TradeLinkArea" placeholder="Персональная ссылка на обмен" value="https://steamcommunity.com/tradeoffer/new/?partner=60679470&token=Rbp6kdzZ">
+						<button class="ByuTicket" type="submit">СОХРАНИТЬ</button>
+					</form>
+				</div>
+				<div class="col-lg-3 Right">
+					<a class="GreyButton Danger" href="#">КАК ЕЕ ПОЛУЧИТЬ?</a>
+				</div>
 			</div>
 			<div class="row AccountDetails">
 				<div class="col-lg-6">

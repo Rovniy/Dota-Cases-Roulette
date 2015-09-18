@@ -236,4 +236,55 @@ count {font-size:140px;}
 .AccountBalance h3 {margin:0px;color:#fff;line-height:0.9}
 .AccountBalance h3 small{;color:#5f8757;}
 .AccountByu {padding:22px 16px 0 0;text-align:right;}
+
+.RedButton {
+	background-image: -moz-linear-gradient(top, #531e22 0%, #250a0c 100%); 
+	background-image: -webkit-linear-gradient(top, #531e22 0%, #250a0c 100%); 
+	background-image: -o-linear-gradient(top, #531e22 0%, #250a0c 100%); 
+	background-image: -ms-linear-gradient(top, #531e22 0% ,#250a0c 100%);
+	padding:7px 30px 8px 30px;
+	color:#fff;
+	border-top:1px solid #673337;
+	border-left:1px solid #673337;
+	border-right:1px solid #230c0e;
+	border-bottom:1px solid #230c0e;
+	font-weight:bold;
+}
+.RedButton:link, .RedButton:visited, .RedButton:active {color:#fff;text-decoration:none;}
+.RedButton:hover {color:#fff;text-decoration:none;
+	background-image: -moz-linear-gradient(top, #6f373b 0%, #522629 100%); 
+	background-image: -webkit-linear-gradient(top, #6f373b 0%, #522629 100%); 
+	background-image: -o-linear-gradient(top, #6f373b 0%, #522629 100%); 
+	background-image: -ms-linear-gradient(top, #6f373b 0% ,#522629 100%);}
+
+
+
+
+
+
+.TradeLink {background: rgba(37, 10, 12, 0.9); margin-top:5px; padding:0px;}
+.TradeLink .Left {padding:0px 5px;;}
+.TradeLink .Left form {padding-top:15px;}
+.TradeLink .Right {padding:22px 16px 23px 0px; text-align:right;}
+.TradeLinkArea {background:#000; color:#525252; width:575px; height:30px; border:0px;padding-left:10px;margin-right:5px;}
+
+.GreyButton {
+	background-image: -moz-linear-gradient(top, #2d3d47 0%, #3d525d 100%); 
+	background-image: -webkit-linear-gradient(top, #2d3d47 0%, #3d525d 100%); 
+	background-image: -o-linear-gradient(top, #2d3d47 0%, #3d525d 100%); 
+	background-image: -ms-linear-gradient(top, #2d3d47 0% ,#3d525d 100%);
+	padding:7px 30px 8px 30px;
+	color:#fff;
+	border-top:1px solid #859d6e;
+	border-left:1px solid #859d6e;
+	border-right:1px solid #294211;
+	border-bottom:1px solid #294211;
+	font-weight:bold;
+}
+.GreyButton:link, .GreyButton:visited, .GreyButton:active {color:#fff;text-decoration:none;}
+.GreyButton:hover {color:#fff;text-decoration:none;
+	background-image: -moz-linear-gradient(top, #5f6664 0%, #abb8b7 100%); 
+	background-image: -webkit-linear-gradient(top, #5f6664 0%, #abb8b7 100%); 
+	background-image: -o-linear-gradient(top, #5f6664 0%, #abb8b7 100%); 
+	background-image: -ms-linear-gradient(top, #5f6664 0% ,#abb8b7 100%);}
  
