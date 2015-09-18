@@ -16,8 +16,8 @@
 <body>
 <?php 
 //Подключение библиотеки API сайта
-include '/sys/api.php'; 
-require "/steam_auth.php"  
+include 'sys/api.php'; 
+require "steam_auth.php"  
 ?>
 <!-- Шапка сайта, главное меню и логотип -->
 <div class="container-fluid header_bar">
