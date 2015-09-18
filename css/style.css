@@ -232,10 +232,11 @@ count {font-size:140px;}
 .AccountName {padding:0px;}
 .AccountName h3 {padding-top:10px; margin:0px;color:#fff;line-height:0.9}
 .AccountName h3 small {color:#5f8757;}
-.AccountBalance {padding-top:10px;}
+.AccountBalance {padding:10px 5px 0 0;text-align:right}
 .AccountBalance h3 {margin:0px;color:#fff;line-height:0.9}
 .AccountBalance h3 small{;color:#5f8757;}
 .AccountByu {padding:22px 16px 0 0;text-align:right;}
+.AddBalance {padding:22px 15px 0 5px;}
 
 .RedButton {
 	background-image: -moz-linear-gradient(top, #531e22 0%, #250a0c 100%); 
@@ -256,7 +257,7 @@ count {font-size:140px;}
 	background-image: -webkit-linear-gradient(top, #6f373b 0%, #522629 100%); 
 	background-image: -o-linear-gradient(top, #6f373b 0%, #522629 100%); 
 	background-image: -ms-linear-gradient(top, #6f373b 0% ,#522629 100%);}
-
+.SmallBtn {padding:7px 10px 8px 15px!important;}
 
 
 
@@ -288,3 +289,7 @@ count {font-size:140px;}
 	background-image: -o-linear-gradient(top, #5f6664 0%, #abb8b7 100%); 
 	background-image: -ms-linear-gradient(top, #5f6664 0% ,#abb8b7 100%);}
  
+
+/******************************************* VIEW OR HIDE SECTIONS ***********************************/
+.current {display:block;transition:1s;}
+.none {display:none;}

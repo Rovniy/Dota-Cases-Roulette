@@ -35,12 +35,12 @@ require "steam_auth.php"
 			</div>
 			<div class="col-lg-8 menunav col-sm-12">
 				<ul>
-					<li class="active"><a href="#" >ГЛАВНАЯ</a></li>
-					<li><a href="#">ПОМОЩЬ</a></li>
-					<li><a href="#">ИНСТРУКЦИЯ</a></li>
-					<li><a href="#">ГАРАНТИИ</a></li>
-					<li><a href="#">ТОП</a></li>
-					<li><a href="#section-section3">ЛИЧНЫЙ КАБИНЕТ</a></li>
+					<li id="nav_index" class="active"><a href="#" >ГЛАВНАЯ</a></li>
+					<li id="nav_help"><a href="#" >ПОМОЩЬ</a></li>
+					<li id="nav_instructions"><a href="#" >ИНСТРУКЦИЯ</a></li>
+					<li id="nav_garant"><a href="#" >ГАРАНТИИ</a></li>
+					<li id="nav_top"><a href="#" >ТОП</a></li>
+					<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">
