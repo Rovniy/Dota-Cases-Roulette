@@ -59,6 +59,20 @@ $(document).ready(function ($) {
 		});
 		
 		
+//--------------------------------------------------------------Открытие подсказок для разыгрываемых предметов
+		
+		$('#obj1').popover({placement:'top',trigger:'hover',animation:'true'});
+		$('#obj2').popover({placement:'top',trigger:'hover'});
+		$('#obj3').popover({placement:'top',trigger:'hover'});
+		$('#obj4').popover({placement:'top',trigger:'hover'});
+		$('#obj5').popover({placement:'top',trigger:'hover'});
+		$('#obj6').popover({placement:'top',trigger:'hover'});
+		$('#obj7').popover({placement:'top',trigger:'hover'});
+		$('#obj8').popover({placement:'top',trigger:'hover'});
+		$('#obj9').popover({placement:'top',trigger:'hover'});
+		$('#obj10').popover({placement:'top',trigger:'hover'});
+		
+		
 		
 		
 		
