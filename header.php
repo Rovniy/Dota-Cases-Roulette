@@ -9,9 +9,9 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/controls.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/controls.js"></script>
 </head>
 <body>
 <?php 
@@ -35,12 +35,12 @@ require "/steam_auth.php"
 			</div>
 			<div class="col-lg-8 menunav col-sm-12">
 				<ul>
-					<li><a href="#" >ГЛАВНАЯ</a></li>
+					<li class="active"><a href="#" >ГЛАВНАЯ</a></li>
 					<li><a href="#">ПОМОЩЬ</a></li>
 					<li><a href="#">ИНСТРУКЦИЯ</a></li>
 					<li><a href="#">ГАРАНТИИ</a></li>
 					<li><a href="#">ТОП</a></li>
-					<li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+					<li><a href="#section-section3">ЛИЧНЫЙ КАБИНЕТ</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">

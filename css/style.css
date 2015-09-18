@@ -8,6 +8,11 @@
 body {
 	background:#000;
 	cursor: url(../img/defualt.cur), default;
+	height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%
 }
 a, a:hover {cursor: url(../img/defualt.cur), default;}
 @font-face{
@@ -174,3 +179,4 @@ box-shadow:         0px 8px 17px 1px rgba(0, 0, 0, 0.75);
          object-fit: cover;
      }
  }
+ /************************************** SCROLLING PAGES *****************************/
