@@ -184,8 +184,6 @@ count {font-size:140px;}
 .grade-legendary img {border-color:#a32be6;}
 .grade-arcane img {border-color:#add93e;}
 
-
-
 /************************************   CHAT *********************************/
 .chatinput {width:400px; height:25px; background:#000; border:1px solid #292e2f; padding-left:10px; color:#525252;}
 .white {color:#fff;}
@@ -224,4 +222,18 @@ count {font-size:140px;}
          object-fit: cover;
      }
  }
- /************************************** SCROLLING PAGES *****************************/
+ /************************************** ACCOUNT DETAILS *****************************/
+.AccountPath {color:#fff;}
+.AccountLine {background:rgba(0, 0, 0, 0.9);}
+.AccountPath h3{text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
+.AccountAvatar {padding:0px;}
+.AccountAvatar img {padding:3px;}
+.AccountLine .LeftBar {padding-left:0px;}
+.AccountName {padding:0px;}
+.AccountName h3 {padding-top:10px; margin:0px;color:#fff;line-height:0.9}
+.AccountName h3 small {color:#5f8757;}
+.AccountBalance {padding-top:10px;}
+.AccountBalance h3 {margin:0px;color:#fff;line-height:0.9}
+.AccountBalance h3 small{;color:#5f8757;}
+.AccountByu {padding:22px 16px 0 0;text-align:right;}
+ 

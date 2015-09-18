@@ -61,7 +61,7 @@ $(document).ready(function ($) {
 		
 //--------------------------------------------------------------Открытие подсказок для разыгрываемых предметов
 		
-		$('#obj1').popover({placement:'top',trigger:'hover',animation:'true'});
+		$('#obj1').popover({placement:'top',trigger:'hover'});
 		$('#obj2').popover({placement:'top',trigger:'hover'});
 		$('#obj3').popover({placement:'top',trigger:'hover'});
 		$('#obj4').popover({placement:'top',trigger:'hover'});
