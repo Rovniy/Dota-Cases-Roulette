@@ -1,9 +1,10 @@
 <?php
-include_once '/lightopenid/openid.php';
+session_start();
+include "lightopenid/openid.php";
 $_STEAMAPI = "3D8E21896DB601C791CCCB63A549C8DE";
 try 
 {
-    $openid = new LightOpenID('http://—сылка дл€ перехода после авторизации/');
+    $openid = new LightOpenID('http://xn--b1aolcj3e.xn--p1ai/');
     if(!$openid->mode) 
     {
         if(isset($_GET['login'])) 
@@ -12,9 +13,9 @@ try
             header('Location: ' . $openid->authUrl());
         }
 ?>
-<form action="?login" method="post">
-    <!-- <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"> -->
-</form>
+<!--<form action="?login" method="post">
+    <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png">
+</form>-->
 <?php
     } 
     elseif($openid->mode == 'cancel') 
@@ -38,14 +39,17 @@ try
  
                 foreach ($json_decoded->response->players as $player)
                 {
-                    echo "
+                     /* echo "
+					 <br>
+					 <br>
+					 <br>
                     <br/>Player ID: $player->steamid
                     <br/>Player Name: $player->personaname
                     <br/>Profile URL: $player->profileurl
                     <br/>SmallAvatar: <img src='$player->avatar'/> 
                     <br/>MediumAvatar: <img src='$player->avatarmedium'/> 
                     <br/>LargeAvatar: <img src='$player->avatarfull'/> 
-                    ";
+                    ";  */
                 }
  
         } 
@@ -53,11 +57,16 @@ try
         {
                 echo "User is not logged in.\n";
         }
+		
+		$_SESSION['steamid'] = $player->steamid;
+		$_SESSION['personaname'] = $player->personaname;
+		$_SESSION['profileurl'] = $player->profileurl;
+		$_SESSION['avatar'] = $player->avatar;
+		$_SESSION['avatarfull'] = $player->avatarfull;
     }
 } 
 catch(ErrorException $e) 
 {
     echo $e->getMessage();
 }
-
 ?>

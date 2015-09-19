@@ -1,6 +1,6 @@
 <?php
 //Подключение шапки сайта
-require 'header.php';
+include_once 'header.php';
 ?>
 <!--  Тело сайта - главная страница -->
 <div class="container main">

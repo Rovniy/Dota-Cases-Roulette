@@ -25,12 +25,11 @@ if (isset($_GET['key'])) {
 	$_SESSION['key'] = $_GET['key'];
 };
 //----------------------------------- STEAM API --------------------
-function InsertIntoTableAccount() {
+/* function InsertIntoTableAccount() {
 if (isset ($player))
 	{	
 		$InsertIntoAccount = "INSERT INTO account (steamid, personaname, profileurl, avatar, avatarfull) VALUES ('$player->steamid', '$player->personaname', '$player->profileurl', '$player->avatar' , '$player->avatarfull')";
 			mysql_query($InsertIntoAccount);
 	}
-}
-
+} */
 ?>

@@ -1,5 +1,8 @@
+<?php 
+include "sys/api.php";
+?>
 <div class="row AccountPath">
-				<h3>ЛИЧНЫЙ КАБИНЕТ | Steam ID: 6819_874198494</h3>
+				<h3>ЛИЧНЫЙ КАБИНЕТ | Steam ID: <?php $player->steamid ?></h3>
 			</div>
 			<div class="row AccountLine">
 				<div class="col-lg-5 LeftBar">
@@ -7,7 +10,7 @@
 						<img alt="avatar" src="img/avatar.png"/>
 					</div>
 					<div class="col-lg-10 AccountName">
-						<h3>Ravy<br/><small>Сейчас на сайте</small></h3>
+						<h3><?php $player->personaname ?><br/><small>Сейчас на сайте</small></h3>
 					</div>
 				</div>
 				<div class="col-lg-2 AccountBalance">
@@ -29,9 +32,10 @@
 				</div>
 				<div class="col-lg-3 Right">
 					<a class="GreyButton Danger" href="#">КАК ЕЕ ПОЛУЧИТЬ?</a>
+					
 				</div>
 			</div>
 			<div class="row AccountDetails">
-								
+			
 			</div>
 			
