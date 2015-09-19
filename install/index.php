@@ -20,6 +20,10 @@ function install() {
 	CREATE TABLE account (
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	 steamid text,
+	 personaname text,
+	 profileurl varchar(100),
+	 avatar VARCHAR(100),
+	 avatarfull VARCHAR(100),
 	 money VARCHAR(50),
 	 bonus int,
 	 linkid text,

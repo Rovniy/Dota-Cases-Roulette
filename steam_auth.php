@@ -1,6 +1,6 @@
 <?php
-require '/lightopenid/openid.php';
-$_STEAMAPI = "6A88AFCE2DFF0C640967A2A7DE813211";
+include_once '/lightopenid/openid.php';
+$_STEAMAPI = "3D8E21896DB601C791CCCB63A549C8DE";
 try 
 {
     $openid = new LightOpenID('http://—сылка дл€ перехода после авторизации/');
@@ -13,7 +13,7 @@ try
         }
 ?>
 <form action="?login" method="post">
-    <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png">
+    <!-- <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png"> -->
 </form>
 <?php
     } 
@@ -59,4 +59,5 @@ catch(ErrorException $e)
 {
     echo $e->getMessage();
 }
+
 ?>

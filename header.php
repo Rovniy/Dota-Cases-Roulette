@@ -1,3 +1,8 @@
+<?php 
+//Подключение библиотеки API сайта
+include '/sys/api.php'; 
+require 'steam_auth.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +19,7 @@
 <script src="js/controls.js"></script>
 </head>
 <body>
-<?php 
-//Подключение библиотеки API сайта
-include '/sys/api.php'; 
-require "/steam_auth.php"  
-?>
+
 <!-- Шапка сайта, главное меню и логотип -->
 <div class="container-fluid header_bar">
 	
@@ -40,7 +41,7 @@ require "/steam_auth.php"
 					<li><a href="#">ИНСТРУКЦИЯ</a></li>
 					<li><a href="#">ГАРАНТИИ</a></li>
 					<li><a href="#">ТОП</a></li>
-					<li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+					<li><a href="account.php">ЛИЧНЫЙ КАБИНЕТ</a></li>   <!--тестирую 19.09.15 -->
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">
