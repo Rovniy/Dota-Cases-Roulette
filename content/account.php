@@ -1,6 +1,3 @@
-<?php 
-include "sys/api.php";
-?>
 <div class="row AccountPath">
 				<h3>ЛИЧНЫЙ КАБИНЕТ | Steam ID: <?php $player->steamid ?></h3>
 			</div>

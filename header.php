@@ -1,8 +1,7 @@
 <?php 
 //Подключение библиотеки API сайта
-include "sys/api.php"; 
+require "sys/api.php"; 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

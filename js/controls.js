@@ -74,55 +74,34 @@ $(document).ready(function ($) {
 		
 		
 		
-//--------------------------------------------------------------Открытие подсказок для разыгрываемых предметов
-
+//-------------------------------------------------------------- СЛАЙДЕР КОНТЕНТА 
+$GoToWidth = (($(window).width()-1000)/2)+15; //Расчет ширины экрана и положения блоков
+$timeout = 300; //Задержка анимации
+function ClassOperation() {
+	$('.current').animate({left: "-2000"}, $timeout);
+	$('.current').removeClass('current');
+	$('.active').removeClass('active');
+	var audio = new Audio(); // Создаём новый элемент Audio
+	audio.src = 'sounds/menu.ogg'; // Указываем путь к звуку "клика"
+	audio.autoplay = true; // Автоматически запускаем
+};
+//Конпка ГЛАВНАЯ
 $('#nav_index').click(function(){
-	$('.current').fadeOut(500);
-	$('.current').addClass('none');
-	$('.current').removeClass('current');
-	$('.active').removeClass('active');
-	
-	$('#Section1').fadeIn(500);
-	$('#Section1').addClass('current');
-	$('#nav_index').addClass('active');
+	$Sect = '#Section1';
+	$id = '#nav_index';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-$('#nav_help').click(function(){
-	$('.current').fadeOut(500);
-	$('.current').addClass('none');
-	$('.current').removeClass('current');
-	$('.active').removeClass('active');
-	
-	$('#Section3').fadeIn(500);
-	$('#Section3').addClass('current');
-	$('#nav_help').addClass('active');
-});
-$('#nav_instructions').click(function(){
-	$('.current').fadeOut(500);
-	$('.current').addClass('none');
-	$('.current').removeClass('current');
-	$('.active').removeClass('active');
-	
-	$('#Section4').fadeIn(500);
-	$('#Section4').addClass('current');
-	$('#nav_instructions').addClass('active');
-});
-$('#nav_account').click(function(){
-	$('.current').fadeOut(500);
-	$('.current').addClass('none');
-	$('.current').removeClass('current');
-	$('.active').removeClass('active');
-	
-	$('#Section2').fadeIn(500);
-	$('#Section2').addClass('current');
-	$('#nav_account').addClass('active');
+//Кнопка ЛИЧНЫЙ КАБИНЕТ
+$('#nav_index').click(function(){
+	$Sect = '#Section2';
+	$id = '#nav_account';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 
-
-
-		
-		
-		
-		
 		
 		
 		

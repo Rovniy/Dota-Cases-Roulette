@@ -227,7 +227,7 @@ count {font-size:140px;}
 .AccountLine {background:rgba(0, 0, 0, 0.9);}
 .AccountPath h3{text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
 .AccountAvatar {padding:0px;}
-.AccountAvatar img {padding:3px;}
+.AccountAvatar img {padding:3px;width:60px;height:60px;display:block;}
 .AccountLine .LeftBar {padding-left:0px;}
 .AccountName {padding:0px;}
 .AccountName h3 {padding-top:10px; margin:0px;color:#fff;line-height:0.9}
@@ -291,5 +291,6 @@ count {font-size:140px;}
  
 
 /******************************************* VIEW OR HIDE SECTIONS ***********************************/
-.current {display:block;transition:1s;}
-.none {display:none;}
+section {position:absolute;}
+.none{left:-2000;}
+.current {}
