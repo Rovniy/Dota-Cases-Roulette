@@ -94,7 +94,7 @@ $('#nav_index').click(function(){
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //νξοκΰ ‹—›‰ €…’
-$('#nav_index').click(function(){
+$('#nav_account').click(function(){
 	$Sect = '#Section2';
 	$id = '#nav_account';
 	ClassOperation();
