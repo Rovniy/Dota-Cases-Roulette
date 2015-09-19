@@ -259,10 +259,6 @@ count {font-size:140px;}
 	background-image: -ms-linear-gradient(top, #6f373b 0% ,#522629 100%);}
 .SmallBtn {padding:7px 10px 8px 15px!important;}
 
-
-
-
-
 .TradeLink {background: rgba(37, 10, 12, 0.9); margin-top:5px; padding:0px;}
 .TradeLink .Left {padding:0px 5px;;}
 .TradeLink .Left form {padding-top:15px;}
@@ -294,3 +290,6 @@ count {font-size:140px;}
 section {position:absolute;}
 .none{left:-2000;}
 .current {}
+/******************************************* GARANT SECTION ***********************************/
+.GarantTitle h3{color:#fff;text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
+.GarantBody {padding:10px;background:rgba(0, 0, 0, 0.8); color:#fff; text-align:center;}

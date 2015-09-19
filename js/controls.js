@@ -74,7 +74,7 @@ $(document).ready(function ($) {
 		
 		
 		
-//-------------------------------------------------------------- ‘‹€‰„… Š’…’€ 
+//-------------------------------------------------------------- ‘‹€‰„… Š’…’€ -------------------------------------
 $GoToWidth = (($(window).width()-1000)/2)+15; //àñ÷åò øèğèíû ıêğàíà è ïîëîæåíèß áëîêîâ
 $timeout = 300; //‡àäåğæêà àíèìàöèè
 function ClassOperation() {
@@ -93,9 +93,42 @@ $('#nav_index').click(function(){
 	$($Sect).animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
+//Šîíïêà Œ™ü
+$('#nav_help').click(function(){
+	$Sect = '#Section2';
+	$id = '#nav_help';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
+});
+//Šîíïêà ˆ‘’“Š–ˆˆ
+$('#nav_instructions').click(function(){
+	$Sect = '#Section3';
+	$id = '#nav_instructions';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
+});
+//Šîíïêà ƒ€€’ˆˆ
+$('#nav_garant').click(function(){
+	$Sect = '#Section4';
+	$id = '#nav_garant';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
+});
+//Šîíïêà ’
+$('#nav_top').click(function(){
+	$Sect = '#Section5';
+	$id = '#nav_top';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
+});
+
 //Šíîïêà ‹ˆ—›‰ Š€ˆ…’
 $('#nav_account').click(function(){
-	$Sect = '#Section2';
+	$Sect = '#Section6';
 	$id = '#nav_account';
 	ClassOperation();
 	$($Sect).animate({left:$GoToWidth}, $timeout)

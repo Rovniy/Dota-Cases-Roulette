@@ -12,23 +12,39 @@ include_once 'header.php';
 				?>
 			</div>
 		</section>
-		<section class="Accountsection none" id="Section2">
+		<section class="Helpsection none" id="Section2">
 			<div class="container main">
 				<?php
 				//Подключение контент
-				require 'content/account.php';
+				require 'content/help.php';
 				?>
 			</div>
 		</section>
-		<section class="Accountsection none" id="Section3">
+		<section class="Instructionsection none" id="Section3">
 			<div class="container main">
 				<?php
 				//Подключение контент
-				require 'content/account.php';
+				require 'content/instruction.php';
 				?>
 			</div>
 		</section>
-		<section class="Accountsection none" id="Section4">
+		<section class="Garantsection none" id="Section4">
+			<div class="container main">
+				<?php
+				//Подключение контент
+				require 'content/garant.php';
+				?>
+			</div>
+		</section>
+		<section class="Topsection none" id="Section5">
+			<div class="container main">
+				<?php
+				//Подключение контент
+				require 'content/top.php';
+				?>
+			</div>
+		</section>
+		<section class="Accountsection none" id="Section6">
 			<div class="container main">
 				<?php
 				//Подключение контент
