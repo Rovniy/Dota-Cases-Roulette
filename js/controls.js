@@ -59,9 +59,66 @@ $(document).ready(function ($) {
 		});
 		
 		
+//--------------------------------------------------------------Открытие подсказок для разыгрываемых предметов
+		
+		$('#obj1').popover({placement:'top',trigger:'hover'});
+		$('#obj2').popover({placement:'top',trigger:'hover'});
+		$('#obj3').popover({placement:'top',trigger:'hover'});
+		$('#obj4').popover({placement:'top',trigger:'hover'});
+		$('#obj5').popover({placement:'top',trigger:'hover'});
+		$('#obj6').popover({placement:'top',trigger:'hover'});
+		$('#obj7').popover({placement:'top',trigger:'hover'});
+		$('#obj8').popover({placement:'top',trigger:'hover'});
+		$('#obj9').popover({placement:'top',trigger:'hover'});
+		$('#obj10').popover({placement:'top',trigger:'hover'});
 		
 		
 		
+//--------------------------------------------------------------Открытие подсказок для разыгрываемых предметов
+
+$('#nav_index').click(function(){
+	$('.current').fadeOut(500);
+	$('.current').addClass('none');
+	$('.current').removeClass('current');
+	$('.active').removeClass('active');
+	
+	$('#Section1').fadeIn(500);
+	$('#Section1').addClass('current');
+	$('#nav_index').addClass('active');
+});
+$('#nav_help').click(function(){
+	$('.current').fadeOut(500);
+	$('.current').addClass('none');
+	$('.current').removeClass('current');
+	$('.active').removeClass('active');
+	
+	$('#Section3').fadeIn(500);
+	$('#Section3').addClass('current');
+	$('#nav_help').addClass('active');
+});
+$('#nav_instructions').click(function(){
+	$('.current').fadeOut(500);
+	$('.current').addClass('none');
+	$('.current').removeClass('current');
+	$('.active').removeClass('active');
+	
+	$('#Section4').fadeIn(500);
+	$('#Section4').addClass('current');
+	$('#nav_instructions').addClass('active');
+});
+$('#nav_account').click(function(){
+	$('.current').fadeOut(500);
+	$('.current').addClass('none');
+	$('.current').removeClass('current');
+	$('.active').removeClass('active');
+	
+	$('#Section2').fadeIn(500);
+	$('#Section2').addClass('current');
+	$('#nav_account').addClass('active');
+});
+
+
+
 		
 		
 		

@@ -14,12 +14,20 @@ require 'steam_auth.php';
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/controls.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/controls.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
 
+=======
+<?php 
+//Подключение библиотеки API сайта
+require 'sys/api.php'; 
+require "steam_auth.php"  
+?>
+>>>>>>> origin/master
 <!-- Шапка сайта, главное меню и логотип -->
 <div class="container-fluid header_bar">
 	
@@ -36,12 +44,21 @@ require 'steam_auth.php';
 			</div>
 			<div class="col-lg-8 menunav col-sm-12">
 				<ul>
+<<<<<<< HEAD
 					<li><a href="#" >ГЛАВНАЯ</a></li>
 					<li><a href="#">ПОМОЩЬ</a></li>
 					<li><a href="#">ИНСТРУКЦИЯ</a></li>
 					<li><a href="#">ГАРАНТИИ</a></li>
 					<li><a href="#">ТОП</a></li>
 					<li><a href="account.php">ЛИЧНЫЙ КАБИНЕТ</a></li>   <!--тестирую 19.09.15 -->
+=======
+					<li id="nav_index" class="active"><a href="#" >ГЛАВНАЯ</a></li>
+					<li id="nav_help"><a href="#" >ПОМОЩЬ</a></li>
+					<li id="nav_instructions"><a href="#" >ИНСТРУКЦИЯ</a></li>
+					<li id="nav_garant"><a href="#" >ГАРАНТИИ</a></li>
+					<li id="nav_top"><a href="#" >ТОП</a></li>
+					<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+>>>>>>> origin/master
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">

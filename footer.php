@@ -11,8 +11,10 @@
 			</div>
 		</div>
 </div>
-<!--  Конец body  -->
-<audio id="MusicDota" src="sounds/main_theme.mp3" repeat="repeat" autoplay="autoplay"></audio>
+<!-- ОТКЛЮЧЕНИЕ ЗВУКА, ВРЕМЕННАЯ МЕРА  -->
+<!--<audio id="MusicDota" src="sounds/main_theme.mp3" loop autoplay></audio>-->
+
+<!--------------------- ВИДЕОФОН  -------------------------->
 <div id="trailer" class="is_overlay">
 	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
 		<source src="movies/Dots2_background.mp4"></source>

@@ -8,12 +8,18 @@
 body {
 	background:#000;
 	cursor: url(../img/defualt.cur), default;
+	height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%
 }
 a, a:hover {cursor: url(../img/defualt.cur), default;}
 @font-face{
 	font-family:'Dota2';
 	src:url('../fonts/dotafont.ttf') format('truetype');
 }
+.Dota2 {font-family:Dota2;}
 /************************ HEADER *****************************/
 .header_bar {
 	background:url("../img/header_bg.png") no-repeat center;
@@ -129,12 +135,54 @@ box-shadow:         0px 8px 17px 1px rgba(0, 0, 0, 0.75);
 .steam_enter:hover {color:#d2a89d;transition:0.5s;}
 
 /*********************************** CONTENT ******************************/
-.bdy {padding-top:100px;}
-.main {z-index:10;}
+.main {z-index:10; padding-top:50px;}
+.wrapper {background:rgba(0, 0, 0, 0.3);}
+.indexsection {text-align:center;color:#fff;}
+.indexsection *{opacity:1;}
+count {font-size:140px;}
+.alignright {text-align:right;}
+.ButtonByu {padding:0px;background:rgba(0, 0, 0, 0.8);}
+.divbyu {padding:16px 9px 0px 0px;text-align:right;}
+.tickets {text-align:left;}
+.tickets h3 {margin:0px; padding: 12px 0px 13px 0px;}
+.ByuTicket {
+	background-image: -moz-linear-gradient(top, #5e852c 0%, #3f611d 100%); 
+	background-image: -webkit-linear-gradient(top, #5e852c 0%, #3f611d 100%); 
+	background-image: -o-linear-gradient(top, #5e852c 0%, #3f611d 100%); 
+	background-image: -ms-linear-gradient(top, #5e852c 0% ,#3f611d 100%);
+	padding:6px 30px 7px 30px;
+	color:#fff;
+	border-top:1px solid #859d6e;
+	border-left:1px solid #859d6e;
+	border-right:1px solid #294211;
+	border-bottom:1px solid #294211;
+	font-weight:bold;
+}
+.ByuTicket:hover {color:#fff;text-decoration:none;
+	background-image: -moz-linear-gradient(top, #7fb23b 0%, #669d2f 100%); 
+	background-image: -webkit-linear-gradient(top, #7fb23b 0%, #669d2f 100%); 
+	background-image: -o-linear-gradient(top, #7fb23b 0%, #669d2f 100%); 
+	background-image: -ms-linear-gradient(top, #7fb23b 0% ,#669d2f 100%);}
+/************************ ПРЕДМЕТЫ ДЛЯ РОЗЫГРЫША *************************/
+.roz-items {background:rgba(0, 0, 0, 0.3);}
+.roz-item {width:192px!important;margin:4px 4px; float:left;}
+.roz-item img {border:2px solid; width:192px;height:130px;}
+.roz-item p {font-weight:700;font-family:Arial;}
+.grade-common p {color:#93c3d9;}
+.grade-uncommon p {color:#4998d9;}
+.grade-rare p {color:#385fff;}
+.grade-mythical p {color:#8545ff;}
+.grade-immortal p {color:#c7ae39;}
+.grade-legendary p {color:#a32be6;}
+.grade-arcane p {color:#add93e;}
 
-
-
-
+.grade-common img {border-color:#93c3d9;}
+.grade-uncommon img {border-color:#4998d9;}
+.grade-rare img {border-color:#385fff;}
+.grade-mythical img {border-color:#8545ff;}
+.grade-immortal img {border-color:#c7ae39;}
+.grade-legendary img {border-color:#a32be6;}
+.grade-arcane img {border-color:#add93e;}
 
 /************************************   CHAT *********************************/
 .chatinput {width:400px; height:25px; background:#000; border:1px solid #292e2f; padding-left:10px; color:#525252;}
@@ -174,3 +222,74 @@ box-shadow:         0px 8px 17px 1px rgba(0, 0, 0, 0.75);
          object-fit: cover;
      }
  }
+ /************************************** ACCOUNT DETAILS *****************************/
+.AccountPath {color:#fff;}
+.AccountLine {background:rgba(0, 0, 0, 0.9);}
+.AccountPath h3{text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
+.AccountAvatar {padding:0px;}
+.AccountAvatar img {padding:3px;}
+.AccountLine .LeftBar {padding-left:0px;}
+.AccountName {padding:0px;}
+.AccountName h3 {padding-top:10px; margin:0px;color:#fff;line-height:0.9}
+.AccountName h3 small {color:#5f8757;}
+.AccountBalance {padding:10px 5px 0 0;text-align:right}
+.AccountBalance h3 {margin:0px;color:#fff;line-height:0.9}
+.AccountBalance h3 small{;color:#5f8757;}
+.AccountByu {padding:22px 16px 0 0;text-align:right;}
+.AddBalance {padding:22px 15px 0 5px;}
+
+.RedButton {
+	background-image: -moz-linear-gradient(top, #531e22 0%, #250a0c 100%); 
+	background-image: -webkit-linear-gradient(top, #531e22 0%, #250a0c 100%); 
+	background-image: -o-linear-gradient(top, #531e22 0%, #250a0c 100%); 
+	background-image: -ms-linear-gradient(top, #531e22 0% ,#250a0c 100%);
+	padding:7px 30px 8px 30px;
+	color:#fff;
+	border-top:1px solid #673337;
+	border-left:1px solid #673337;
+	border-right:1px solid #230c0e;
+	border-bottom:1px solid #230c0e;
+	font-weight:bold;
+}
+.RedButton:link, .RedButton:visited, .RedButton:active {color:#fff;text-decoration:none;}
+.RedButton:hover {color:#fff;text-decoration:none;
+	background-image: -moz-linear-gradient(top, #6f373b 0%, #522629 100%); 
+	background-image: -webkit-linear-gradient(top, #6f373b 0%, #522629 100%); 
+	background-image: -o-linear-gradient(top, #6f373b 0%, #522629 100%); 
+	background-image: -ms-linear-gradient(top, #6f373b 0% ,#522629 100%);}
+.SmallBtn {padding:7px 10px 8px 15px!important;}
+
+
+
+
+
+.TradeLink {background: rgba(37, 10, 12, 0.9); margin-top:5px; padding:0px;}
+.TradeLink .Left {padding:0px 5px;;}
+.TradeLink .Left form {padding-top:15px;}
+.TradeLink .Right {padding:22px 16px 23px 0px; text-align:right;}
+.TradeLinkArea {background:#000; color:#525252; width:575px; height:30px; border:0px;padding-left:10px;margin-right:5px;}
+
+.GreyButton {
+	background-image: -moz-linear-gradient(top, #2d3d47 0%, #3d525d 100%); 
+	background-image: -webkit-linear-gradient(top, #2d3d47 0%, #3d525d 100%); 
+	background-image: -o-linear-gradient(top, #2d3d47 0%, #3d525d 100%); 
+	background-image: -ms-linear-gradient(top, #2d3d47 0% ,#3d525d 100%);
+	padding:7px 30px 8px 30px;
+	color:#fff;
+	border-top:1px solid #859d6e;
+	border-left:1px solid #859d6e;
+	border-right:1px solid #294211;
+	border-bottom:1px solid #294211;
+	font-weight:bold;
+}
+.GreyButton:link, .GreyButton:visited, .GreyButton:active {color:#fff;text-decoration:none;}
+.GreyButton:hover {color:#fff;text-decoration:none;
+	background-image: -moz-linear-gradient(top, #5f6664 0%, #abb8b7 100%); 
+	background-image: -webkit-linear-gradient(top, #5f6664 0%, #abb8b7 100%); 
+	background-image: -o-linear-gradient(top, #5f6664 0%, #abb8b7 100%); 
+	background-image: -ms-linear-gradient(top, #5f6664 0% ,#abb8b7 100%);}
+ 
+
+/******************************************* VIEW OR HIDE SECTIONS ***********************************/
+.current {display:block;transition:1s;}
+.none {display:none;}
