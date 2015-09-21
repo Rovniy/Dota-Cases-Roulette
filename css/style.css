@@ -293,3 +293,28 @@ section {position:absolute;}
 /******************************************* GARANT SECTION ***********************************/
 .GarantTitle h3{color:#fff;text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
 .GarantBody {padding:10px;background:rgba(0, 0, 0, 0.8); color:#fff; text-align:center;}
+
+
+/******************************************* BYU CARDS ***********************************/
+.CardsBody {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.Card img {
+	opacity:0.7;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+.Card a:hover img {
+	opacity:1;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+.Card1 {padding-top:50px;float:right;}
+.Card2 {padding-top:20px;}
+.Card3 {float:left;}
+.Card4 {padding:35px 0 0 150px;}
+.Card5 {padding:0 150px 0 0;}

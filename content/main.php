@@ -9,7 +9,7 @@
 		<h3 class="Dota2">Куплено билетов 65 из 100</h3>
 	</div>
 	<div class="col-lg-6 divbyu">
-		<a class="ByuTicket " href="">ПРИНЯТЬ УЧАСТИЕ</a>
+		<a class="ByuTicket" id="ByuTicket" href="#">ПРИНЯТЬ УЧАСТИЕ</a>
 	</div>
 </div>
 <div class="row roz-items">

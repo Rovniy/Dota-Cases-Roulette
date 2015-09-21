@@ -24,13 +24,13 @@ require "sys/api.php";
 	
 		<div class="row header">
 			<div class="col-lg-1 user_acc center">
-				<a href="#" class="pull-right">
+				<a href="#" id="UserIcon"class="pull-right">
 					<i class="fa fa-user fa-2x"></i>
 				</a>
 			</div>
 			<div class="col-lg-1 logo center">
 				<a href="#">
-					<img src="img/logo.gif" alt="Dota777"/>
+					<img id="logo_index" src="img/logo.gif" alt="Dota777"/>
 				</a>
 			</div>
 			<div class="col-lg-8 menunav col-sm-12">

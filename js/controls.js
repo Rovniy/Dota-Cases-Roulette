@@ -125,7 +125,6 @@ $('#nav_top').click(function(){
 	$($Sect).animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-
 //Šíîïêà ‹ˆ—›‰ Š€ˆ…’
 $('#nav_account').click(function(){
 	$Sect = '#Section6';
@@ -134,7 +133,30 @@ $('#nav_account').click(function(){
 	$($Sect).animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-
+//Šíîïêà ‹ˆ—›‰ Š€ˆ…’ ‘ ˆŠŠˆ ‹Š
+$('#UserIcon').click(function(){
+	$Sect = '#Section6';
+	$id = '#UserIcon';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
+});
+//Šíîïêà ˆŸ’œ “—€‘’ˆ…
+$('#ByuTicket').click(function(){
+	$Sect = '#Section7';
+	$id = '#ByuTicket';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
+});
+//‘ûëêà ëîãîòèïà
+$('#logo_index').click(function(){
+	$Sect = '#Section1';
+	$id = '#logo_index';
+	ClassOperation();
+	$($Sect).animate({left:$GoToWidth}, $timeout)
+	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
+});
 		
 		
 		

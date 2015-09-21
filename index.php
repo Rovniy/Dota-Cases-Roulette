@@ -52,6 +52,14 @@ include_once 'header.php';
 				?>
 			</div>
 		</section>
+		<section class="ByuPage none" id="Section7">
+			<div class="container main">
+				<?php
+				//Подключение контент
+				require 'content/byupage.php';
+				?>
+			</div>
+		</section>
 </div>
 <?php
 //Подключение футера
