@@ -58,27 +58,13 @@ $(document).ready(function ($) {
 			}
 		});
 		
-		
-//--------------------------------------------------------------Открытие подсказок для разыгрываемых предметов
-		
-		$('#obj1').popover({placement:'top',trigger:'hover'});
-		$('#obj2').popover({placement:'top',trigger:'hover'});
-		$('#obj3').popover({placement:'top',trigger:'hover'});
-		$('#obj4').popover({placement:'top',trigger:'hover'});
-		$('#obj5').popover({placement:'top',trigger:'hover'});
-		$('#obj6').popover({placement:'top',trigger:'hover'});
-		$('#obj7').popover({placement:'top',trigger:'hover'});
-		$('#obj8').popover({placement:'top',trigger:'hover'});
-		$('#obj9').popover({placement:'top',trigger:'hover'});
-		$('#obj10').popover({placement:'top',trigger:'hover'});
-		
-		
+
 		
 //-------------------------------------------------------------- СЛАЙДЕР КОНТЕНТА -------------------------------------
 $GoToWidth = (($(window).width()-1000)/2)+15; //Расчет ширины экрана и положения блоков
-$timeout = 300; //Задержка анимации
+$timeout = 200; //Задержка анимации
 function ClassOperation() {
-	$('.current').animate({left: "-2000"}, $timeout);
+	$('.current').stop().animate({left: "-2000"}, $timeout);
 	$('.current').removeClass('current');
 	$('.active').removeClass('active');
 	var audio = new Audio(); // Создаём новый элемент Audio
@@ -90,7 +76,7 @@ $('#nav_index').click(function(){
 	$Sect = '#Section1';
 	$id = '#nav_index';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Конпка ПОМОЩь
@@ -98,7 +84,7 @@ $('#nav_help').click(function(){
 	$Sect = '#Section2';
 	$id = '#nav_help';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Конпка ИНСТРУКЦИИ
@@ -106,7 +92,7 @@ $('#nav_instructions').click(function(){
 	$Sect = '#Section3';
 	$id = '#nav_instructions';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Конпка ГАРАНТИИ
@@ -114,7 +100,7 @@ $('#nav_garant').click(function(){
 	$Sect = '#Section4';
 	$id = '#nav_garant';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Конпка ТОП
@@ -122,7 +108,7 @@ $('#nav_top').click(function(){
 	$Sect = '#Section5';
 	$id = '#nav_top';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Кнопка ЛИЧНЫЙ КАБИНЕТ
@@ -130,7 +116,7 @@ $('#nav_account').click(function(){
 	$Sect = '#Section6';
 	$id = '#nav_account';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Кнопка ЛИЧНЫЙ КАБИНЕТ С ИКОНКИ ЛК
@@ -138,7 +124,7 @@ $('#UserIcon').click(function(){
 	$Sect = '#Section6';
 	$id = '#UserIcon';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Кнопка ПРИНЯТЬ УЧАСТИЕ
@@ -146,7 +132,7 @@ $('#ByuTicket').click(function(){
 	$Sect = '#Section7';
 	$id = '#ByuTicket';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 //Сылка логотипа
@@ -154,7 +140,7 @@ $('#logo_index').click(function(){
 	$Sect = '#Section1';
 	$id = '#logo_index';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
 		

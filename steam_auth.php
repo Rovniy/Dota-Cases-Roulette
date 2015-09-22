@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "lightopenid/openid.php";
 $_STEAMAPI = "3D8E21896DB601C791CCCB63A549C8DE";
 try 

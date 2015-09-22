@@ -24,9 +24,13 @@ require "sys/api.php";
 	
 		<div class="row header">
 			<div class="col-lg-1 user_acc center">
-				<a href="#" id="UserIcon"class="pull-right">
-					<i class="fa fa-user fa-2x"></i>
-				</a>
+				<?php if(isset($_SESSION['steamid'])) 
+					{
+					echo '<a href="#" id="UserIcon"class="pull-right">
+							<i class="fa fa-user fa-2x"></i>
+						</a>';
+					}
+					?>
 			</div>
 			<div class="col-lg-1 logo center">
 				<a href="#">
@@ -41,10 +45,11 @@ require "sys/api.php";
 					<li id="nav_instructions"><a href="#" >ИНСТРУКЦИЯ</a></li>
 					<li id="nav_garant"><a href="#" >ГАРАНТИИ</a></li>
 					<li id="nav_top"><a href="#" >ТОП</a></li>
-					<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
-					
-					
-					
+					<?php if(isset($_SESSION['steamid'])) 
+					{
+					echo '<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>';
+					}
+					?>
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">
