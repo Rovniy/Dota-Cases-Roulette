@@ -16,7 +16,7 @@
 require "../sys/api.php";
 
 function install() {
-	mysql_query("
+	/* $TableAccount = "
 	CREATE TABLE account (
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	 steamid text,
@@ -28,8 +28,20 @@ function install() {
 	 bonus int,
 	 linkid text,
 	 bonusnick text
-	) DEFAULT CHARSET=utf8;" 
-	);
+	) DEFAULT CHARSET=utf8; 
+	";
+	mysql_query($TableAccount); */
+	
+	$TableTop = "
+	CREATE TABLE top (
+	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	 steamid text,
+	 pearsonaname text,
+	 avatar VARCHAR(100),
+	 profileurl text
+	) DEFAULT CHARSET=utf8;
+	";
+	mysql_query($TableTop);
 
 	/* Проверка состояния БД */
 	if (mysql_error()) { echo "<h1 class='ins_center ins_red'>".mysql_error()."</h1>"; }

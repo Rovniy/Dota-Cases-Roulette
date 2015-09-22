@@ -41,19 +41,21 @@ require "sys/api.php";
 					<li id="nav_instructions"><a href="#" >ИНСТРУКЦИЯ</a></li>
 					<li id="nav_garant"><a href="#" >ГАРАНТИИ</a></li>
 					<li id="nav_top"><a href="#" >ТОП</a></li>
-					<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
-					
+					<?php if(isset($_SESSION['steamid'])) 
+					{
+					echo '<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>';
+					}
+					?>
 					
 					
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">
-				<a href="?login" class="steam_enter" id="steam_enter">
+			<form method="GET" action="/steam_auth.php">
+				 <a href="?login" type="submit" class="steam_enter" id="steam_enter">
 						<i class="fa fa-steam fa-2x"></i>
-					
-					
-						
-				</a>			
+				</a>
+			</form>			
 			</div>
 		</div>
 	
