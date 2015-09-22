@@ -135,7 +135,7 @@ box-shadow:         0px 8px 17px 1px rgba(0, 0, 0, 0.75);
 .steam_enter:hover {color:#d2a89d;transition:0.5s;}
 
 /*********************************** CONTENT ******************************/
-.main {z-index:10; padding-top:50px;}
+.main {z-index:10; padding-top:70px;}
 .wrapper {background:rgba(0, 0, 0, 0.3);}
 .indexsection {text-align:center;color:#fff;}
 .indexsection *{opacity:1;}
@@ -290,7 +290,7 @@ count {font-size:140px;}
 
 /******************************************* VIEW OR HIDE SECTIONS ***********************************/
 section {position:absolute;}
-.none{left:-2000;}
+.none{left:-2000px;}
 .current {}
 /******************************************* GARANT SECTION ***********************************/
 .GarantTitle h3{color:#fff;text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
@@ -320,3 +320,5 @@ section {position:absolute;}
 .Card3 {float:left;}
 .Card4 {padding:35px 0 0 150px;}
 .Card5 {padding:0 150px 0 0;}
+/********************************************* TOP *************************************************/
+.TopBody {background:background:rgba(0, 0, 0, 0.6);overflow-y:scroll;max-height:600px;}
