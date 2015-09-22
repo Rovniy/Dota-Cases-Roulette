@@ -165,16 +165,18 @@ count {font-size:140px;}
 	background-image: -ms-linear-gradient(top, #7fb23b 0% ,#669d2f 100%);}
 /************************ ПРЕДМЕТЫ ДЛЯ РОЗЫГРЫША *************************/
 .roz-items {background:rgba(0, 0, 0, 0.3);}
-.roz-item {width:192px!important;margin:4px 4px; float:left;}
+.Opisanie {position:absolute;bottom:0px;left:0px;width:192px;padding:5px;}
+.Opisanie span {font-size:12px;font-weight:700}
+.roz-item {width:192px!important;margin:4px 4px; float:left;position:relative;}
 .roz-item img {border:2px solid; width:192px;height:130px;}
 .roz-item p {font-weight:700;font-family:Arial;}
-.grade-common p {color:#93c3d9;}
-.grade-uncommon p {color:#4998d9;}
-.grade-rare p {color:#385fff;}
-.grade-mythical p {color:#8545ff;}
-.grade-immortal p {color:#c7ae39;}
-.grade-legendary p {color:#a32be6;}
-.grade-arcane p {color:#add93e;}
+.grade-common  p{color:#93c3d9;}
+.grade-uncommon  p{color:#4998d9;}
+.grade-rare  p{color:#385fff;}
+.grade-mythical  p{color:#8545ff;}
+.grade-immortal  p{color:#c7ae39;}
+.grade-legendary  p{color:#a32be6;}
+.grade-arcane p{color:#add93e;}
 
 .grade-common img {border-color:#93c3d9;}
 .grade-uncommon img {border-color:#4998d9;}
