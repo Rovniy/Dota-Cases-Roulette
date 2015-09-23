@@ -1,4 +1,4 @@
-//---------------------------------------------------Обраотчик форм ---------------------------------------
+//---------------------------------------------------РћР±СЂР°РѕС‚С‡РёРє С„РѕСЂРј ---------------------------------------
 $(document).ready(function ($) {
 		$('#formSubmit').click(function(){ 
 			var error = false;
@@ -40,7 +40,7 @@ $(document).ready(function ($) {
 			}
 		return false;
 		});
-//‚ыдвигающаЯсЯ кнопка логин в стим
+//вЂљС‹РґРІРёРіР°СЋС‰Р°РЇСЃРЇ РєРЅРѕРїРєР° Р»РѕРіРёРЅ РІ СЃС‚РёРј
 		$('#steam_enter').hover(function(){
 			//$('#hidden_btn_steam').css('display','block');
 		});
@@ -58,105 +58,92 @@ $(document).ready(function ($) {
 			}
 		});
 		
+
 		
-//--------------------------------------------------------------Ћткрытие подсказок длЯ разыгрываемых предметов
-		
-		$('#obj1').popover({placement:'top',trigger:'hover'});
-		$('#obj2').popover({placement:'top',trigger:'hover'});
-		$('#obj3').popover({placement:'top',trigger:'hover'});
-		$('#obj4').popover({placement:'top',trigger:'hover'});
-		$('#obj5').popover({placement:'top',trigger:'hover'});
-		$('#obj6').popover({placement:'top',trigger:'hover'});
-		$('#obj7').popover({placement:'top',trigger:'hover'});
-		$('#obj8').popover({placement:'top',trigger:'hover'});
-		$('#obj9').popover({placement:'top',trigger:'hover'});
-		$('#obj10').popover({placement:'top',trigger:'hover'});
-		
-		
-		
-//-------------------------------------------------------------- ‘‹Ђ‰„…ђ ЉЋЌ’…Ќ’Ђ -------------------------------------
-$GoToWidth = (($(window).width()-1000)/2)+15; //ђасчет ширины экрана и положениЯ блоков
-$timeout = 300; //‡адержка анимации
+//-------------------------------------------------------------- вЂвЂ№Р‚вЂ°вЂћвЂ¦С’ Р‰Р‹РЊвЂ™вЂ¦РЊвЂ™Р‚ -------------------------------------
+$GoToWidth = (($(window).width()-1000)/2)+15; //С’Р°СЃС‡РµС‚ С€РёСЂРёРЅС‹ СЌРєСЂР°РЅР° Рё РїРѕР»РѕР¶РµРЅРёРЇ Р±Р»РѕРєРѕРІ
+$timeout = 200; //вЂЎР°РґРµСЂР¶РєР° Р°РЅРёРјР°С†РёРё
 function ClassOperation() {
-	$('.current').animate({left: "-2000"}, $timeout);
+	$('.current').stop().animate({left: "-2000"}, $timeout);
 	$('.current').removeClass('current');
 	$('.active').removeClass('active');
-	var audio = new Audio(); // ‘оздаЮм новый элемент Audio
-	audio.src = 'sounds/menu.ogg'; // “казываем путь к звуку "клика"
-	audio.autoplay = true; // Ђвтоматически запускаем
+	var audio = new Audio(); // вЂРѕР·РґР°Р®Рј РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚ Audio
+	audio.src = 'sounds/menu.ogg'; // вЂњРєР°Р·С‹РІР°РµРј РїСѓС‚СЊ Рє Р·РІСѓРєСѓ "РєР»РёРєР°"
+	audio.autoplay = true; // Р‚РІС‚РѕРјР°С‚РёС‡РµСЃРєРё Р·Р°РїСѓСЃРєР°РµРј
 };
-//Љонпка ѓ‹Ђ‚ЌЂџ
+//Р‰РѕРЅРїРєР° С“вЂ№Р‚вЂљРЊР‚Сџ
 $('#nav_index').click(function(){
 	$Sect = '#Section1';
 	$id = '#nav_index';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//Љонпка ЏЋЊЋ™ь
+//Р‰РѕРЅРїРєР° РЏР‹РЉР‹в„ўСЊ
 $('#nav_help').click(function(){
 	$Sect = '#Section2';
 	$id = '#nav_help';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//Љонпка €Ќ‘’ђ“Љ–€€
+//Р‰РѕРЅРїРєР° в‚¬РЊвЂвЂ™С’вЂњР‰вЂ“в‚¬в‚¬
 $('#nav_instructions').click(function(){
 	$Sect = '#Section3';
 	$id = '#nav_instructions';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//Љонпка ѓЂђЂЌ’€€
+//Р‰РѕРЅРїРєР° С“Р‚С’Р‚РЊвЂ™в‚¬в‚¬
 $('#nav_garant').click(function(){
 	$Sect = '#Section4';
 	$id = '#nav_garant';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//Љонпка ’ЋЏ
+//Р‰РѕРЅРїРєР° вЂ™Р‹РЏ
 $('#nav_top').click(function(){
 	$Sect = '#Section5';
 	$id = '#nav_top';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//Љнопка ‹€—Ќ›‰ ЉЂЃ€Ќ…’
+//Р‰РЅРѕРїРєР° вЂ№в‚¬вЂ”РЊвЂєвЂ° Р‰Р‚Рѓв‚¬РЊвЂ¦вЂ™
 $('#nav_account').click(function(){
 	$Sect = '#Section6';
 	$id = '#nav_account';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//Љнопка ‹€—Ќ›‰ ЉЂЃ€Ќ…’ ‘ €ЉЋЌЉ€ ‹Љ
+//Р‰РЅРѕРїРєР° вЂ№в‚¬вЂ”РЊвЂєвЂ° Р‰Р‚Рѓв‚¬РЊвЂ¦вЂ™ вЂ в‚¬Р‰Р‹РЊР‰в‚¬ вЂ№Р‰
 $('#UserIcon').click(function(){
 	$Sect = '#Section6';
 	$id = '#UserIcon';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//Љнопка Џђ€Ќџ’њ “—Ђ‘’€…
+//Р‰РЅРѕРїРєР° РЏС’в‚¬РЊСџвЂ™Сљ вЂњвЂ”Р‚вЂвЂ™в‚¬вЂ¦
 $('#ByuTicket').click(function(){
 	$Sect = '#Section7';
 	$id = '#ByuTicket';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
-//‘ылка логотипа
+//вЂС‹Р»РєР° Р»РѕРіРѕС‚РёРїР°
 $('#logo_index').click(function(){
 	$Sect = '#Section1';
 	$id = '#logo_index';
 	ClassOperation();
-	$($Sect).animate({left:$GoToWidth}, $timeout)
+	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
+		
 		
 		
 		

@@ -1,6 +1,10 @@
 <div class="row AccountPath">
 				<h3>ЛИЧНЫЙ КАБИНЕТ | Steam ID: <?php echo $_SESSION['steamid'] ?></h3>
+<<<<<<< HEAD
 			</div>
+=======
+</div>
+>>>>>>> origin/master
 			<div class="row AccountLine">
 				<div class="col-lg-5 LeftBar">
 					<div class="col-lg-2 AccountAvatar">
@@ -14,10 +18,10 @@
 					<h3><?php echo $SteamExUrl['money'];?> руб. <br/><small>Ваш баланс</small></h3>
 				</div>
 				<div class="col-lg-4 AddBalance">
-					<a href="#" class="ByuTicket"><i class="fa fa-plus"></i> ПОПОЛНИТЬ БАЛАНС</a>
+					<a href="#" data-toggle="modal" data-target="#myModal" class="ByuTicket"><i class="fa fa-plus"></i> ПОПОЛНИТЬ БАЛАНС</a>
 				</div>
 				<div class="col-lg-1 AccountByu">
-					<a href="#" class="RedButton SmallBtn"><i class="fa fa-sign-out fa"></i></a>
+					<a href="sys/logout.php" class="RedButton SmallBtn"><i class="fa fa-sign-out fa"></i></a>
 				</div>
 			</div>
 			<div class="row TradeLink">
@@ -37,4 +41,21 @@
 			<div class="row AccountDetails">
 			
 			</div>
+<?php //********************* MODAL **************** ?>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">ПОПОЛНЕНИЕ ЛИЧНОГО СЧЕТА</h4>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="InputCash" placeholder="Сумма пополнения (руб.)">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">Купить</button>
+			</div>
+		</div>
+	</div>
+</div>
 			

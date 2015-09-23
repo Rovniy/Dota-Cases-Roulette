@@ -14,6 +14,22 @@ body {
     padding: 0;
     width: 100%
 }
+::-webkit-scrollbar{
+width:6px;
+background-color:rgba(0, 0, 0, 0);;
+} 
+::-webkit-scrollbar-thumb{
+background-color:#566767;
+border-radius:10px;
+}
+body::-moz-scrollbar{
+width:6px;
+background-color:rgba(0, 0, 0, 0);;
+} 
+body::-moz-scrollbar-thumb{
+background-color:#566767;
+border-radius:10px;
+}
 a, a:hover {cursor: url(../img/defualt.cur), default;}
 @font-face{
 	font-family:'Dota2';
@@ -135,7 +151,7 @@ box-shadow:         0px 8px 17px 1px rgba(0, 0, 0, 0.75);
 .steam_enter:hover {color:#d2a89d;transition:0.5s;}
 
 /*********************************** CONTENT ******************************/
-.main {z-index:10; padding-top:50px;}
+.main {z-index:10; padding-top:70px;}
 .wrapper {background:rgba(0, 0, 0, 0.3);}
 .indexsection {text-align:center;color:#fff;}
 .indexsection *{opacity:1;}
@@ -165,16 +181,18 @@ count {font-size:140px;}
 	background-image: -ms-linear-gradient(top, #7fb23b 0% ,#669d2f 100%);}
 /************************ ПРЕДМЕТЫ ДЛЯ РОЗЫГРЫША *************************/
 .roz-items {background:rgba(0, 0, 0, 0.3);}
-.roz-item {width:192px!important;margin:4px 4px; float:left;}
+.Opisanie {position:absolute;bottom:0px;left:0px;width:192px;padding:5px;}
+.Opisanie span {font-size:12px;font-weight:700}
+.roz-item {width:192px!important;margin:4px 4px; float:left;position:relative;}
 .roz-item img {border:2px solid; width:192px;height:130px;}
 .roz-item p {font-weight:700;font-family:Arial;}
-.grade-common p {color:#93c3d9;}
-.grade-uncommon p {color:#4998d9;}
-.grade-rare p {color:#385fff;}
-.grade-mythical p {color:#8545ff;}
-.grade-immortal p {color:#c7ae39;}
-.grade-legendary p {color:#a32be6;}
-.grade-arcane p {color:#add93e;}
+.grade-common  p{color:#93c3d9;}
+.grade-uncommon  p{color:#4998d9;}
+.grade-rare  p{color:#385fff;}
+.grade-mythical  p{color:#8545ff;}
+.grade-immortal  p{color:#c7ae39;}
+.grade-legendary  p{color:#a32be6;}
+.grade-arcane p{color:#add93e;}
 
 .grade-common img {border-color:#93c3d9;}
 .grade-uncommon img {border-color:#4998d9;}
@@ -288,7 +306,7 @@ count {font-size:140px;}
 
 /******************************************* VIEW OR HIDE SECTIONS ***********************************/
 section {position:absolute;}
-.none{left:-2000;}
+.none{left:-2000px;}
 .current {}
 /******************************************* GARANT SECTION ***********************************/
 .GarantTitle h3{color:#fff;text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
@@ -318,3 +336,26 @@ section {position:absolute;}
 .Card3 {float:left;}
 .Card4 {padding:35px 0 0 150px;}
 .Card5 {padding:0 150px 0 0;}
+/********************************************* TOP *************************************************/
+.TopBody {
+	background:rgba(0, 0, 0, 0.6); 
+	overflow-y:scroll;
+	max-height:550px; 
+	color:#fff;
+}
+.TopBody table{width:100%; line-height:2;}
+.TopBody tr {padding:5px 0 5px 0; text-align:center;border-bottom:1px solid #3e3e3e;}
+.TopBody td {padding:0 5px 0 5px;}
+.ToptableTitle {font-weight:700;}
+.TopID {width:10%;}
+.TopNameSteam {width:30%;}
+.TopColItems {width:25%;}
+.TopSummWin {width:30%;}
+.GarantTitle {text-align:center;}
+.GarantTitle h1 {margin-top:0px; font-weight:700; color:#fff;}
+.GarantTitle h1 small{font-size:16px; color:#fff;}
+/********************************************* CLOCK *************************************************/
+.counter {color:#fff; font-size:120px; font-family:Dota2;letter-spacing:10px;}
+
+/********************************************* MODAL WINDOWS ******************************************/
+.InputCash {width:400px; height:80px;font-family:Dota2; font-size:30px;}

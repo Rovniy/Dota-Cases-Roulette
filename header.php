@@ -16,17 +16,21 @@ require "sys/api.php";
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/controls.js"></script>
+<script type="text/javascript" src='js/clock.js'></script>
 </head>
 <body>
-
 <!-- Шапка сайта, главное меню и логотип -->
 <div class="container-fluid header_bar">
 	
 		<div class="row header">
 			<div class="col-lg-1 user_acc center">
-				<a href="#" id="UserIcon"class="pull-right">
-					<i class="fa fa-user fa-2x"></i>
-				</a>
+				<?php if(isset($_SESSION['steamid'])) 
+					{
+					echo '<a href="#" id="UserIcon"class="pull-right">
+							<i class="fa fa-user fa-2x"></i>
+						</a>';
+					}
+					?>
 			</div>
 			<div class="col-lg-1 logo center">
 				<a href="#">
@@ -46,8 +50,11 @@ require "sys/api.php";
 					echo '<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>';
 					}
 					?>
+<<<<<<< HEAD
 					
 					
+=======
+>>>>>>> origin/master
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">

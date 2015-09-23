@@ -16,7 +16,11 @@
 require "../sys/api.php";
 
 function install() {
+<<<<<<< HEAD
 	/* $TableAccount = "
+=======
+	$TableAccount = "
+>>>>>>> origin/master
 	CREATE TABLE account (
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	 steamid text,
@@ -30,8 +34,12 @@ function install() {
 	 bonusnick text
 	) DEFAULT CHARSET=utf8; 
 	";
+<<<<<<< HEAD
 	mysql_query($TableAccount); */
 	
+=======
+		
+>>>>>>> origin/master
 	$TableTop = "
 	CREATE TABLE top (
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -41,8 +49,31 @@ function install() {
 	 profileurl text
 	) DEFAULT CHARSET=utf8;
 	";
+<<<<<<< HEAD
 	mysql_query($TableTop);
 
+=======
+	
+	$TabUniPay ="
+	CREATE TABLE `unitpay_payments` (
+	`id` int(10) NOT NULL AUTO_INCREMENT,
+	`unitpayId` varchar(255) NOT NULL,
+	`account` varchar(255) NOT NULL,
+	`sum` float NOT NULL,
+	`itemsCount` int(11) NOT NULL DEFAULT '1',
+	`dateCreate` datetime NOT NULL,
+	`dateComplete` datetime DEFAULT NULL,
+	`status` tinyint(4) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+	) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;"
+	
+	
+	
+	mysql_query($TableAccount);
+	mysql_query($TableTop);
+	mysql_query($TabUniPay);
+	
+>>>>>>> origin/master
 	/* Проверка состояния БД */
 	if (mysql_error()) { echo "<h1 class='ins_center ins_red'>".mysql_error()."</h1>"; }
 	else { echo "<h1 class='ins_center ins_green'>Установка успешно закончена!</h1>"; };
