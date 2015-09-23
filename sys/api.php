@@ -3,18 +3,30 @@
 # $SiteTopRow  - Глобальный массив запрошенных данных из таблицы `top`. Строка 32.
 #
 # xPloitGroup 2015 // MaximZhuravlev $ AndrewRovniy
-
 session_start();
 include 'steam_auth.php';
+/************************************* SAIT CONFIG *******************************************/
+$MainUrl = "http://localhost";
+$BdUser = "root";
+$BdPass = "";
+$BdName = "dota2_bd";
+
+
+//************************************ ТЕСТОВЫЙ ПОЛЬЗОВАТЕЛЬ **********************************/
+$_SESSION['steamid'] = '123456';
+$_SESSION['personaname'] = 'SOMEUSER';
+$_SESSION['profileurl'] = #;
+$_SESSION['avatar'] = 'img/avatar.png';
+$_SESSION['avatarfull'] = 'img/avatar.png';
 
 //----------------------------------- ПОДКЛЮЧЕНИЕ К БД ----------------------------------
 //Формирование подключения
-$check_link = mysql_connect('localhost', 'root', '');
+$check_link = mysql_connect('localhost', $BdUser, $BdPass);
 //Проверка подключения
 if (!$check_link) {
     die('Ошибка соединения: ' . mysql_error());
 }
- mysql_select_db('dota2_bd') or die("Не могу выбрать таблицу в БД");
+mysql_select_db($BdName) or die("Не могу выбрать таблицу в БД");
 mysql_query("SET NAMES utf8"); 
 
 //-----------------------------------ПЕРЕМЕННЫЕ СЕССИЙ----------------------------------
