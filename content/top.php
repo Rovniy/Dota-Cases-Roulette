@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-<div class="row roz-items">
-	<?php echo $SelectTopRow[steamid]; ?>
-</div>
-=======
-<div class="row GarantTitle">
-	<h3>ТОП УЧАСТНИКОВ | КТО И ЧТО ВЫИГРЫВАЕТ В НАШЕЙ ЛОТЕРЕЕ</h3>
-=======
 <div class="row">
 	<div class="row GarantTitle">
 		<div class="col-lg-4">
@@ -20,7 +10,6 @@
 			<h1>35<br/><small>УНИКАЛЬНЫХ ИГРОКОВ СЕГОДНЯ</small></h1>
 		</div>
 	</div>
->>>>>>> origin/master
 </div>
 <div class="row TopBody">
 	<table>
@@ -380,4 +369,3 @@
 	</table>
 </div>
 			
->>>>>>> origin/master

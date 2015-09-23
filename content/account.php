@@ -1,10 +1,6 @@
 <div class="row AccountPath">
 				<h3>ЛИЧНЫЙ КАБИНЕТ | Steam ID: <?php echo $_SESSION['steamid'] ?></h3>
-<<<<<<< HEAD
-			</div>
-=======
 </div>
->>>>>>> origin/master
 			<div class="row AccountLine">
 				<div class="col-lg-5 LeftBar">
 					<div class="col-lg-2 AccountAvatar">
@@ -18,7 +14,7 @@
 					<h3><?php echo $SteamExUrl['money'];?> руб. <br/><small>Ваш баланс</small></h3>
 				</div>
 				<div class="col-lg-4 AddBalance">
-					<a href="#" data-toggle="modal" data-target="#CashModal" class="ByuTicket"><i class="fa fa-plus"></i> ПОПОЛНИТЬ БАЛАНС</a>
+					<a href="#" data-toggle="modal" data-target="#myModal" class="ByuTicket"><i class="fa fa-plus"></i> ПОПОЛНИТЬ БАЛАНС</a>
 				</div>
 				<div class="col-lg-1 AccountByu">
 					<a href="sys/logout.php" class="RedButton SmallBtn"><i class="fa fa-sign-out fa"></i></a>
@@ -42,7 +38,7 @@
 			
 			</div>
 <?php //********************* MODAL **************** ?>
-<div class="modal fade" id="CashModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">

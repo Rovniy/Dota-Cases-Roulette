@@ -16,11 +16,7 @@
 require "../sys/api.php";
 
 function install() {
-<<<<<<< HEAD
-	/* $TableAccount = "
-=======
 	$TableAccount = "
->>>>>>> origin/master
 	CREATE TABLE account (
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	 steamid text,
@@ -34,12 +30,7 @@ function install() {
 	 bonusnick text
 	) DEFAULT CHARSET=utf8; 
 	";
-<<<<<<< HEAD
-	mysql_query($TableAccount); */
-	
-=======
 		
->>>>>>> origin/master
 	$TableTop = "
 	CREATE TABLE top (
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -49,10 +40,6 @@ function install() {
 	 profileurl text
 	) DEFAULT CHARSET=utf8;
 	";
-<<<<<<< HEAD
-	mysql_query($TableTop);
-
-=======
 	
 	$TabUniPay ="
 	CREATE TABLE `unitpay_payments` (
@@ -73,7 +60,6 @@ function install() {
 	mysql_query($TableTop);
 	mysql_query($TabUniPay);
 	
->>>>>>> origin/master
 	/* Проверка состояния БД */
 	if (mysql_error()) { echo "<h1 class='ins_center ins_red'>".mysql_error()."</h1>"; }
 	else { echo "<h1 class='ins_center ins_green'>Установка успешно закончена!</h1>"; };

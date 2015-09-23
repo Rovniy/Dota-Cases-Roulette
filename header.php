@@ -50,19 +50,15 @@ require "sys/api.php";
 					echo '<li id="nav_account"><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>';
 					}
 					?>
-<<<<<<< HEAD
-					
-					
-=======
->>>>>>> origin/master
 				</ul>
 			</div>
 			<div class="col-lg-1 steam pull-right">
-			<form method="GET" action="/steam_auth.php">
-				 <a href="?login" type="submit" class="steam_enter" id="steam_enter">
+				<a href="?login" class="steam_enter" id="steam_enter">
 						<i class="fa fa-steam fa-2x"></i>
-				</a>
-			</form>			
+					
+					
+						
+				</a>			
 			</div>
 		</div>
 	
