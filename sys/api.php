@@ -15,7 +15,8 @@ $BdName = "dota2_bd";
 //************************************ ТЕСТОВЫЙ ПОЛЬЗОВАТЕЛЬ **********************************/
 $_SESSION['steamid'] = '123456';
 $_SESSION['personaname'] = 'SOMEUSER';
-$_SESSION['profileurl'] = #;
+$_SESSION['profileurl'] = '#';
+$_SESSION['money'] = '1250';
 $_SESSION['avatar'] = 'img/avatar.png';
 $_SESSION['avatarfull'] = 'img/avatar.png';
 

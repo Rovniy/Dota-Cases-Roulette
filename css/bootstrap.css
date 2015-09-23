@@ -5959,7 +5959,6 @@ button.close {
   background-color: rgba(37, 10, 12, 0.9);
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
@@ -6002,8 +6001,8 @@ button.close {
   text-align:center;
 }
 .modal-footer {
-  padding: 15px;
-  text-align: right;
+  padding: 15px 15px 30px 15px;
+  text-align: center;
 }
 .modal-footer .btn + .btn {
   margin-left: 5px;

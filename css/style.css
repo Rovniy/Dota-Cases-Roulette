@@ -358,4 +358,4 @@ section {position:absolute;}
 .counter {color:#fff; font-size:120px; font-family:Dota2;letter-spacing:10px;}
 
 /********************************************* MODAL WINDOWS ******************************************/
-.InputCash {width:400px; height:80px;font-family:Dota2; font-size:30px;}
+.InputCash {width:400px; height:80px;font-family:Dota2; font-size:30px;padding-left:10px;}

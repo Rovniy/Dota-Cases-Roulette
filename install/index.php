@@ -41,7 +41,7 @@ function install() {
 	) DEFAULT CHARSET=utf8;
 	";
 	
-	$TabUniPay ="
+	$TabUniPay = "
 	CREATE TABLE `unitpay_payments` (
 	`id` int(10) NOT NULL AUTO_INCREMENT,
 	`unitpayId` varchar(255) NOT NULL,
@@ -52,7 +52,7 @@ function install() {
 	`dateComplete` datetime DEFAULT NULL,
 	`status` tinyint(4) NOT NULL DEFAULT '0',
 	PRIMARY KEY (`id`)
-	) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;"
+	) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;";
 	
 	
 	

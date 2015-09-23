@@ -11,7 +11,7 @@
 					</div>
 				</div>
 				<div class="col-lg-2 AccountBalance">
-					<h3><?php echo $SteamExUrl['money'];?> руб. <br/><small>Ваш баланс</small></h3>
+					<h3><?php echo $_SESSION['money'];?> руб. <br/><small>Ваш баланс</small></h3>
 				</div>
 				<div class="col-lg-4 AddBalance">
 					<a href="#" data-toggle="modal" data-target="#myModal" class="ByuTicket"><i class="fa fa-plus"></i> ПОПОЛНИТЬ БАЛАНС</a>
@@ -46,10 +46,12 @@
 				<h4 class="modal-title" id="myModalLabel">ПОПОЛНЕНИЕ ЛИЧНОГО СЧЕТА</h4>
 			</div>
 			<div class="modal-body">
-				<input type="text" class="InputCash" placeholder="Сумма пополнения (руб.)">
+				<form method="GET" action="http://unitpay.ru/pay/123456?sum=4&account=5&desc=Payment_for_dota777">
+					<input name="sum" type="text" class="InputCash" placeholder="Сумма пополнения (руб.)">
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary">Купить</button>
+				<button type="submit" class="ByuTicket">ПОПОЛНИТЬ</button>
+				</form>
 			</div>
 		</div>
 	</div>
