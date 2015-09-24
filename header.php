@@ -17,6 +17,7 @@ require "sys/api.php";
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/controls.js"></script>
 <script type="text/javascript" src='js/clock.js'></script>
+<script type="text/javascript" src='js/jquery.noty.packaged.min.js'></script>
 </head>
 <body>
 <!-- Шапка сайта, главное меню и логотип -->

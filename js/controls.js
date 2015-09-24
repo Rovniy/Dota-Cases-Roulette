@@ -98,14 +98,29 @@ $('#logo_index').click(function(){
 	$($Sect).stop().animate({left:$GoToWidth}, $timeout)
 	setTimeout("$($Sect).removeClass('none'),$($Sect).addClass('current'),$($id).addClass('active')",$timeout);
 });
+	
 		
 		
 		
-		
-		
-		
-		
-		
-		
+});		
 
-});	
+
+
+function BuyCard(typecard){
+   $.ajax({
+		url: "./sys/buycard.php",
+		data: "typecard="+typecard,
+		type     : 'GET',
+        dataType : 'json',
+        success  : function(data)
+        {
+				$.noty.closeAll();
+                if(data && data['status'] == true)
+				var n = noty({timeout: '2000',theme: 'successnoty',layout: 'center',text: 'СПАСИБО ЗА ПОКУПКУ<br/>ДОЖДИТЕСЬ РОЗЫГРЫША'});;
+			
+				if(data && data['status'] == false)
+                var n = noty({timeout: '2000',theme: 'warningnoty',layout: 'center',text: 'У ВАС НЕДОСТАТОЧНО СРЕДСТВ<br/>ПОПОЛНИТЕ БАЛАНС'});;
+        }
+	})
+}
+

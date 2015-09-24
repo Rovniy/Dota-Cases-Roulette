@@ -41,6 +41,54 @@ function install() {
 	) DEFAULT CHARSET=utf8;
 	";
 	
+	
+	$TablePayCards = "
+	CREATE TABLE paycards (
+	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	 drow int,
+	 steamid text,
+	 cardtype VARCHAR(100),
+	 cardpoints int
+	) DEFAULT CHARSET=utf8;
+	";
+	
+	$TableDrows = "
+	CREATE TABLE drows (
+	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	 item1 text,
+	 user1 text,
+	 item2 text,
+	 user2 text,
+	 item3 text,
+	 user3 text,
+	 item4 text,
+	 user4 text,
+	 item5 text,
+	 user5 text,
+	 item6 text,
+	 user6 text,
+	 item7 text,
+	 user7 text,
+	 item8 text,
+	 user8 text,
+	 item9 text,
+	 user9 text,
+	 item10 text,
+	 user10 text
+	) DEFAULT CHARSET=utf8;
+	";
+	//Вот тут надо намудрить с полем Даты, чтобы автоматом было CURRENT_TIMESTAMP
+	$TablePayments = "
+	CREATE TABLE payments (
+	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	 steamid VARCHAR(100),
+	 operation VARCHAR(100),
+	 summ VARCHAR(100),
+	 date timestamp 
+	) DEFAULT CHARSET=utf8;
+	";
+	
+	
 	$TabUniPay = "
 	CREATE TABLE `unitpay_payments` (
 	`id` int(10) NOT NULL AUTO_INCREMENT,
@@ -59,6 +107,9 @@ function install() {
 	mysql_query($TableAccount);
 	mysql_query($TableTop);
 	mysql_query($TabUniPay);
+	mysql_query($TablePayCards);
+	mysql_query($TableDrows);
+	mysql_query($TablePayments);
 	
 	/* Проверка состояния БД */
 	if (mysql_error()) { echo "<h1 class='ins_center ins_red'>".mysql_error()."</h1>"; }

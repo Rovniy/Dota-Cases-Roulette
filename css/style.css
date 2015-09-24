@@ -359,3 +359,7 @@ section {position:absolute;}
 
 /********************************************* MODAL WINDOWS ******************************************/
 .InputCash {width:400px; height:80px;font-family:Dota2; font-size:30px;padding-left:10px;}
+
+/********************************************* NOTY ALERT ********************************************/
+.successnoty .noty_bar {background:#d9edf7;border-radius:3px; padding:10px;font-family:Dota2;text-align:center;}
+.warningnoty .noty_bar {background:#fcf8e3;border-radius:3px; padding:10px;font-family:Dota2;text-align:center;}

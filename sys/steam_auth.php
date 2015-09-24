@@ -1,5 +1,5 @@
 <?php
-include "lightopenid/openid.php";
+include "openid.php";
 $_STEAMAPI = "3D8E21896DB601C791CCCB63A549C8DE";
 try 
 {
@@ -11,11 +11,6 @@ try
             $openid->identity = 'http://steamcommunity.com/openid/?l=english'; 
             header('Location: ' . $openid->authUrl());
         }
-?>
-<!--<form action="?login" method="post">
-    <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png">
-</form>-->
-<?php
     } 
     elseif($openid->mode == 'cancel') 
     {

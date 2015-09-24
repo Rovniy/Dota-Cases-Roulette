@@ -10,13 +10,19 @@ $MainUrl = "http://localhost";
 $BdUser = "root";
 $BdPass = "";
 $BdName = "dota2_bd";
+//Стоимость карт
+$DefaultCard = '49';
+$SilverCard = '75';
+$GoldCard = '95';
+$PlatinumCard = '119';
+$BrilliantCard = '199';
 
 
 //************************************ ТЕСТОВЫЙ ПОЛЬЗОВАТЕЛЬ **********************************/
 $_SESSION['steamid'] = '123456';
 $_SESSION['personaname'] = 'SOMEUSER';
 $_SESSION['profileurl'] = '#';
-$_SESSION['money'] = '1250';
+$_SESSION['money'] = '1000';
 $_SESSION['avatar'] = 'img/avatar.png';
 $_SESSION['avatarfull'] = 'img/avatar.png';
 
@@ -35,6 +41,13 @@ if (isset($_SESSION['steamid'])) {
 $SteamIdSession = $_SESSION['steamid'];
 };
 
+//АКТУАЛЬНЫЙ РОЗЫГРЫШ
+$ActualDrowQuery = mysql_query("SELECT * from `drows` WHERE `actual` = '1'"); 
+$ActualDrow = mysql_fetch_array($ActualDrowQuery);
+$ActualDrowID = $ActualDrow['id'];
+//Текущий пользователь
+$CurrentUserSteam = $_SESSION['steamid'];
+$CurrentUserName = $_SESSION['personaname'];
 //----------------------------------- Запросы К БД -----------------------------------------
 if (isset($SteamIdSession)) {
 $SteamExchange = mysql_query("SELECT * from `account` WHERE `steamid` = '$SteamIdSession'"); 
