@@ -46,7 +46,7 @@
 				<h4 class="modal-title" id="myModalLabel">ПОПОЛНЕНИЕ ЛИЧНОГО СЧЕТА</h4>
 			</div>
 			<div class="modal-body">
-				<form method="GET" action="http://unitpay.ru/pay/123456?sum=4&account=5&desc=Payment_for_dota777">
+				<form method="GET" action="./sys/gopay.php?cost=<? echo $_GET['sum']?>">
 					<input name="sum" type="text" class="InputCash" placeholder="Сумма пополнения (руб.)">
 			</div>
 			<div class="modal-footer">
