@@ -36,8 +36,8 @@ function install() {
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	 steamid text,
 	 pearsonaname text,
-	 avatar VARCHAR(100),
-	 profileurl text
+	 items text,
+	 allsum text
 	) DEFAULT CHARSET=utf8;
 	";
 	
@@ -51,29 +51,41 @@ function install() {
 	 cardpoints int
 	) DEFAULT CHARSET=utf8;
 	";
-	
+	//Вот тут тоже надо дату сделать, чтоы автоматом ставилась
 	$TableDrows = "
 	CREATE TABLE drows (
 	 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	 actual varchar(100),
+	 datestart timestamp,
 	 item1 text,
+	 cost1 text,
 	 user1 text,
 	 item2 text,
+	 cost2 text,
 	 user2 text,
 	 item3 text,
+	 cost3 text,
 	 user3 text,
 	 item4 text,
+	 cost4 text,
 	 user4 text,
 	 item5 text,
+	 cost5 text,
 	 user5 text,
 	 item6 text,
+	 cost6 text,
 	 user6 text,
 	 item7 text,
+	 cost7 text,
 	 user7 text,
 	 item8 text,
+	 cost8 text,
 	 user8 text,
 	 item9 text,
+	 cost9 text,
 	 user9 text,
 	 item10 text,
+	 cost10 text,
 	 user10 text
 	) DEFAULT CHARSET=utf8;
 	";
@@ -104,12 +116,12 @@ function install() {
 	
 	
 	
-	mysql_query($TableAccount);
+	//mysql_query($TableAccount);
 	mysql_query($TableTop);
-	mysql_query($TabUniPay);
-	mysql_query($TablePayCards);
-	mysql_query($TableDrows);
-	mysql_query($TablePayments);
+	//mysql_query($TabUniPay);
+	//mysql_query($TablePayCards);
+	//mysql_query($TableDrows);
+	//mysql_query($TablePayments);
 	
 	/* Проверка состояния БД */
 	if (mysql_error()) { echo "<h1 class='ins_center ins_red'>".mysql_error()."</h1>"; }

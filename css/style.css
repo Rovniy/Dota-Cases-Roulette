@@ -12,7 +12,7 @@ body {
     margin: 0;
     overflow: hidden;
     padding: 0;
-    width: 100%
+    width: 100%;	
 }
 ::-webkit-scrollbar{
 width:6px;
@@ -181,7 +181,7 @@ count {font-size:140px;}
 	background-image: -ms-linear-gradient(top, #7fb23b 0% ,#669d2f 100%);}
 /************************ ПРЕДМЕТЫ ДЛЯ РОЗЫГРЫША *************************/
 .roz-items {background:rgba(0, 0, 0, 0.3);}
-.Opisanie {position:absolute;bottom:0px;left:0px;width:192px;padding:5px;}
+.Opisanie {position:absolute;bottom:0px;left:0px;width:192px;padding:5px;color:#fff;text-align:center;}
 .Opisanie span {font-size:12px;font-weight:700}
 .roz-item {width:192px!important;margin:4px 4px; float:left;position:relative;}
 .roz-item img {border:2px solid; width:192px;height:130px;}
@@ -244,6 +244,15 @@ count {font-size:140px;}
 .AccountPath {color:#fff;}
 .AccountLine {background:rgba(0, 0, 0, 0.9);}
 .AccountPath h3{text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;}
+.AccountDetails {background:rgba(0, 0, 0, 0.6);}
+.AccountDetails h3{text-shadow:2px -1px 11px #ffffff;font-size:16px;font-weight:700;color:#fff;}
+.AccountDetails .col-lg-8 {padding:0px;}
+.AccountDetails .col-lg-8 h3 {padding-left:5px;}
+.AccountDetails .col-lg-2 {padding:0px;}
+.changenick {text-align:center;}
+.changebonus {text-align:center;}
+dota777 {font-size:24px; color:#fff;text-align:center;text-shadow:2px -1px 11px #ffffff;}
+bonus {font-size:80px;color:#fff;text-shadow:2px -1px 11px #ffffff;text-align:center;}
 .AccountAvatar {padding:0px;}
 .AccountAvatar img {padding:3px;width:60px;height:60px;display:block;}
 .AccountLine .LeftBar {padding-left:0px;}
@@ -278,8 +287,7 @@ count {font-size:140px;}
 .SmallBtn {padding:7px 10px 8px 15px!important;}
 
 .TradeLink {background: rgba(37, 10, 12, 0.9); margin-top:5px; padding:0px;}
-.TradeLink .Left {padding:0px 5px;;}
-.TradeLink .Left form {padding-top:15px;}
+.TradeLink .Left {padding:15px 5px 0 5px;}
 .TradeLink .Right {padding:22px 16px 23px 0px; text-align:right;}
 .TradeLinkArea {background:#000; color:#525252; width:575px; height:30px; border:0px;padding-left:10px;margin-right:5px;}
 
@@ -351,9 +359,10 @@ section {position:absolute;}
 .TopNameSteam {width:30%;}
 .TopColItems {width:25%;}
 .TopSummWin {width:30%;}
-.GarantTitle {text-align:center;}
-.GarantTitle h1 {margin-top:0px; font-weight:700; color:#fff;}
-.GarantTitle h1 small{font-size:16px; color:#fff;}
+.GarantTitle {text-align:left;}
+.TopTitle {text-align:center;}
+.TopTitle h1 {margin-top:0px; font-weight:700; color:#fff;}
+.TopTitle h1 small{font-size:16px; color:#fff;}
 /********************************************* CLOCK *************************************************/
 .counter {color:#fff; font-size:120px; font-family:Dota2;letter-spacing:10px;}
 

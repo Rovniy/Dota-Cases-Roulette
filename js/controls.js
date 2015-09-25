@@ -116,11 +116,31 @@ function BuyCard(typecard){
         {
 				$.noty.closeAll();
                 if(data && data['status'] == true)
-				var n = noty({timeout: '2000',theme: 'successnoty',layout: 'center',text: 'СПАСИБО ЗА ПОКУПКУ<br/>ДОЖДИТЕСЬ РОЗЫГРЫША'});;
+				var n = noty({timeout: '2000',theme: 'successnoty',layout: 'center',text: 'СПАСИБО ЗА ПОКУПКУ<br/>ДОЖДИТЕСЬ РОЗЫГРЫША'});
 			
 				if(data && data['status'] == false)
-                var n = noty({timeout: '2000',theme: 'warningnoty',layout: 'center',text: 'У ВАС НЕДОСТАТОЧНО СРЕДСТВ<br/>ПОПОЛНИТЕ БАЛАНС'});;
+                var n = noty({timeout: '2000',theme: 'warningnoty',layout: 'center',text: 'У ВАС НЕДОСТАТОЧНО СРЕДСТВ<br/>ПОПОЛНИТЕ БАЛАНС'});
         }
 	})
-}
+};
+
+function SaveUrl(){
+	$link = $('.TradeLinkArea').val();
+	console.log($link);
+   $.ajax({
+		url: "./sys/saveurl.php",
+		data: "save="+$link,
+		type     : 'GET',
+        dataType : 'json',
+        success  : function(data)
+        {
+			$.noty.closeAll();
+                if(data && data['status'] == true)
+				var n = noty({timeout: '2000',theme: 'successnoty',layout: 'center',text: 'ВАША ССЫЛКА СОХРАНЕНА'});
+			
+				if(data && data['status'] == false)
+                var n = noty({timeout: '2000',theme: 'warningnoty',layout: 'center',text: 'ВОЗНИКЛИ ПРОБЛЕМЫ<br/>СВЯЖИТЕСЬ С АДМИНОМ'});
+        }
+	})
+};
 

@@ -27,7 +27,7 @@ $CurrentPoins = 50;
 
 	if ($_SESSION['money'] >= $CurrentBuyCard) {
 		
-		$RemoveMoney = $_SESSION['money'] - $CurrentBuyCard;
+		$RemoveMoney = $_SESSION['money'] - ($CurrentBuyCard - $CurrentBuyCard * $CurrentUserBonus / 100);
 		$RemoveMoneyQuery = "UPDATE account SET money=$RemoveMoney";
 		mysql_query($RemoveMoneyQuery);
 		
