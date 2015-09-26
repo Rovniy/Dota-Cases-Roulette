@@ -36,6 +36,7 @@ a, a:hover {cursor: url(../img/defualt.cur), default;}
 	src:url('../fonts/dotafont.ttf') format('truetype');
 }
 .Dota2 {font-family:Dota2;}
+.pad10 {padding:10px;}
 /************************ HEADER *****************************/
 .header_bar {
 	background:url("../img/header_bg.png") no-repeat center;
@@ -179,6 +180,10 @@ count {font-size:140px;}
 	background-image: -webkit-linear-gradient(top, #7fb23b 0%, #669d2f 100%); 
 	background-image: -o-linear-gradient(top, #7fb23b 0%, #669d2f 100%); 
 	background-image: -ms-linear-gradient(top, #7fb23b 0% ,#669d2f 100%);}
+.Instr strong {text-decoration:underline;}
+.HelpBody {padding:10px;background:rgba(0, 0, 0, 0.8); color:#fff; text-align:left;}
+.HelpBody .text{text-align:left;vertical-align:middle;}
+.HelpBody .image{text-align:right;height:300px;}
 /************************ ПРЕДМЕТЫ ДЛЯ РОЗЫГРЫША *************************/
 .roz-items {background:rgba(0, 0, 0, 0.3);}
 .Opisanie {position:absolute;bottom:0px;left:0px;width:192px;padding:5px;color:#fff;text-align:center;}

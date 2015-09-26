@@ -46,11 +46,15 @@ $SteamIdSession = $_SESSION['steamid'];
 $ActualDrowQuery = mysql_query("SELECT * from `drows` WHERE `actual` = '1'"); 
 $ActualDrow = mysql_fetch_array($ActualDrowQuery);
 $ActualDrowID = $ActualDrow['id'];
+
 //Количество купленных билетов
-//$BilletCountQuery = mysql_query("SELECT * from `paycards` WHERE `actual` = '1'"); 
+$BilletCountQuery = mysql_query("SELECT * from `paycards` WHERE `drow` = '$ActualDrowID'"); 
+$BilletCount = mysql_num_rows($BilletCountQuery);
+
 //Текущий пользователь
 $CurrentUserSteam = $_SESSION['steamid'];
 $CurrentUserName = $_SESSION['personaname'];
+
 //Проверка наличия в нике приставки и зачисление бонуса
 $CurrentUserBonusQuery = mysql_query("SELECT bonus from `account` WHERE `steamid` = '$CurrentUserSteam'");
 $CurrentUserBonusArray = mysql_fetch_assoc($CurrentUserBonusQuery);
