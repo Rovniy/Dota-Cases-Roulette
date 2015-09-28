@@ -9,7 +9,7 @@
 </div>			
 <div class="row ButtonByu">
 	<div class="col-lg-6 tickets">
-		<h3 class="Dota2">Куплено билетов 65 из 100</h3>
+		<h3 class="Dota2">Куплено билетов <?php echo $BilletCount; ?> из 100</h3>
 	</div>
 	<div class="col-lg-6 divbyu">
 		<a class="ByuTicket" id="ByuTicket" href="#">ПРИНЯТЬ УЧАСТИЕ</a>

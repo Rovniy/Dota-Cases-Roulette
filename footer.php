@@ -19,20 +19,7 @@
 		</div>
 </div>
 <!-- ОТКЛЮЧЕНИЕ ЗВУКА, ВРЕМЕННАЯ МЕРА  -->
-<!--<audio id="MusicDota" src="sounds/main_theme.mp3" loop autoplay></audio>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
+<audio id="MusicDota" src="sounds/main_theme.mp3" loop autoplay></audio>
 
 
 <!--------------------- ВИДЕОФОН  -------------------------->

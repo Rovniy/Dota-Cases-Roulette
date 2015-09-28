@@ -17,7 +17,7 @@
 					<a href="#" data-toggle="modal" data-target="#myModal" class="ByuTicket"><i class="fa fa-plus"></i> ПОПОЛНИТЬ БАЛАНС</a>
 				</div>
 				<div class="col-lg-1 AccountByu">
-					<a href="sys/logout.php" class="RedButton SmallBtn"><i class="fa fa-sign-out fa"></i></a>
+					<a href="sys/logout.php" class="RedButton SmallBtn" >ВЫХОД</a>
 				</div>
 			</div>
 			<div class="row TradeLink">
@@ -26,7 +26,7 @@
 							<button onclick="SaveUrl()" class="ByuTicket">СОХРАНИТЬ</button>
 				</div>
 				<div class="col-lg-3 Right">
-					<a class="GreyButton Danger" href="#">КАК ЕЕ ПОЛУЧИТЬ?</a>
+					<a class="GreyButton Danger" id="HelpButton" href="#">КАК ЕЕ ПОЛУЧИТЬ?</a>
 					
 				</div>
 			</div>
