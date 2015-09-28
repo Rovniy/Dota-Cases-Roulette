@@ -129,4 +129,59 @@ if (isset($_GET['saveurl'])) {
 	}
 	mysql_query($InsertIntoAccountLink);
 }
+
+//получение вещей админа
+function getInventory($_STEAMAPI, $steamid) {
+     
+    $url = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=$_STEAMAPI&steamids=76561198020945198";
+    $json_object = file_get_contents($url);
+    $json_decoded = json_decode($json_object);
+    $str = '76561198020945198';
+    $urlInv = "http://steamcommunity.com/profiles/" . $str . "/inventory/json/570/2/?trading=1";
+    $json_object_inv = file_get_contents($urlInv);
+    $json_decoded_inv = json_decode($json_object_inv, true);
+    // iterate through Inventory and find ids.
+    $rgInventory = $json_decoded_inv[rgInventory];
+    $rgInventory = array_values($rgInventory);
+    $rgDesc = $json_decoded_inv[rgDescriptions];
+    $rgDesc = array_values($rgDesc);
+    $itemnames = array();
+    for ($i = 0; $i < 20; $i++) {  //iterate through rgInventory.
+        $classidInv = $rgInventory[$i]['classid'];
+        $instanceidInv = $rgInventory[$i]['instanceid'];
+        for ($j = 0; $j < 20; $j++) {   //iterate through rgDesc.
+            $classid = $rgDesc[$j]['classid'];
+            $instanceid = $rgDesc[$j]['instanceid'];
+            if ($classidInv == $classid && $instanceidInv == $instanceid) {
+                $icon_url = $rgDesc[$j]['icon_url'];
+                $market_name = $rgDesc[$j]['market_name'];
+                $market_name_formatted = str_replace(" ", "%20", $market_name);
+                $st_color = $rgDesc[$j]['name_color'];
+                $itemnames = array_push($itemnames, $market_name_formatted);
+                for ($k = 0; $k < 20; $k++) {
+                    if ($rgDesc[$j]['tags'][$k]['category'] == "Rarity") {
+                        $name_color = $rgDesc[$j]['tags'][$k]['color'];
+                    } else if ($rgDesc[$j]['tags'][$k]['category'] == "Exterior") {
+                        $name_exterior = $rgDesc[$j]['tags'][$k]['name'];
+                    }
+                }
+            }
+        }
+        if ($st_color == "CF6A32") {
+            $name_color = "CF6A32";
+        }
+		
+         echo '
+		<div class="roz-item item' . $i . '" style="border:1px solid #$name_color ">
+				<img style=border-color:#' . $name_color. ' src="http://steamcommunity-a.akamaihd.net/economy/image/' . $icon_url . '" width="112px" height="98px" alt="' . $market_name . "/" . $name_color . '"/>
+			<div class="Opisanie">
+			<span>' . $market_name . '<br/><strong></strong></span>
+			</div>
+				</div>
+		'; 
+	
+		
+        $name_exterior = null;
+    }
+}
 ?>
