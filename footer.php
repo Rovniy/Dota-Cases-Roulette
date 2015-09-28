@@ -1,8 +1,15 @@
 <!--  Нижний колонтитул  -->
 <div class="container-fluid footer_bar">
 	<div class="row footer">
-			<div class="col-lg-4 col-sm-4">
-				<input type="text" class="chatinput" placeholder="(Для сайта) Общаться можно здесь">
+			<div class="col-lg-4 col-sm-4 textareachat">
+				<div class="chat">
+					<div id="chat_area"><!-- Сюда мы будем добавлять новые сообщения --></div>
+				</div>
+				<form id="pac_form"><!-- Наша форма с именем, сообщением и кнопкой для отправки -->
+					<input type="text" id="pac_name" value="<?php echo $_SESSION['personaname']; ?>">
+					<input type="text" id="pac_text" class="chatinput" autocomplete="off" placeholder="Это чат. Здесь можно поболтать." value="">
+					<input type="submit" id="SubmitChat" value="Отправить">
+				</form>
 			</div>
 			<div class="col-lg-4 col-sm-4 center">
 			</div>
@@ -13,6 +20,20 @@
 </div>
 <!-- ОТКЛЮЧЕНИЕ ЗВУКА, ВРЕМЕННАЯ МЕРА  -->
 <!--<audio id="MusicDota" src="sounds/main_theme.mp3" loop autoplay></audio>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--------------------- ВИДЕОФОН  -------------------------->
 <div id="trailer" class="is_overlay">

@@ -41,6 +41,16 @@ function install() {
 	) DEFAULT CHARSET=utf8;
 	";
 	
+			
+	$TableChat = "
+		CREATE TABLE `messages` (
+	  `id` int(5) NOT NULL auto_increment,
+	  `name` char(255) character set utf8 NOT NULL,
+	  `text` text character set utf8,
+	  PRIMARY KEY  (`id`)
+	);
+	";
+	
 	
 	$TablePayCards = "
 	CREATE TABLE paycards (
@@ -117,11 +127,12 @@ function install() {
 	
 	
 	//mysql_query($TableAccount);
-	mysql_query($TableTop);
+	//mysql_query($TableTop);
 	//mysql_query($TabUniPay);
 	//mysql_query($TablePayCards);
 	//mysql_query($TableDrows);
 	//mysql_query($TablePayments);
+	mysql_query($TableChat);
 	
 	/* Проверка состояния БД */
 	if (mysql_error()) { echo "<h1 class='ins_center ins_red'>".mysql_error()."</h1>"; }

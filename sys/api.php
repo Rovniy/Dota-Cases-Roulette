@@ -20,10 +20,10 @@ $BrilliantCard = '199';
 
 
 //************************************ ТЕСТОВЫЙ ПОЛЬЗОВАТЕЛЬ **********************************/
-$_SESSION['steamid'] = '123456';
-$_SESSION['personaname'] = 'SOMEUSER';
+$_SESSION['steamid'] = 'MY_STEAMID';
+$_SESSION['personaname'] = 'ADMIN';
 $_SESSION['profileurl'] = '#';
-$_SESSION['money'] = '1000';
+$_SESSION['money'] = '1050';
 $_SESSION['avatar'] = 'img/avatar.png';
 $_SESSION['avatarfull'] = 'img/avatar.png';
 
